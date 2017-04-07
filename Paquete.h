@@ -28,6 +28,8 @@ class Paquete {
   Paquete();
   Paquete(char header[HEADER_SIZE]);
   int getLongitudDatos();
+  unsigned int getSrc();
+  unsigned int getDst();
   int getOffset();
   int setData(char data[MAX_LEN_DATA], int dataL);
   bool getData(char data[MAX_LEN_DATA]);

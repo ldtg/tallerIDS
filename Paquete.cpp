@@ -5,7 +5,7 @@
 #include <netinet/in.h>
 #include <cstring>
 #include "Paquete.h"
-Paquete::Paquete(){
+Paquete::Paquete() {
 
 }
 Paquete::Paquete(char *header) {
@@ -40,12 +40,16 @@ unsigned short Paquete::getDosBytes(char *header, int byteInicio) {
 }
 
 unsigned int Paquete::getCuatroBytes(char *header, int byteInicio) {
-  unsigned int aux;
+  unsigned int pb, sb, tb, cb, aux;
   unsigned int primerS, segundoS;
-  primerS = getDosBytes(header, byteInicio);
-  segundoS = getDosBytes(header, byteInicio + 2);
-  aux = primerS << 16;
-  aux += segundoS;
+  pb = (unsigned int) header[byteInicio] & (255);
+  sb = (unsigned int) header[byteInicio + 1] & (255);
+  tb = (unsigned int) header[byteInicio + 2] & (255);
+  cb = (unsigned int) header[byteInicio + 3] & (255);
+  aux = pb << 24;
+  aux += sb << 16;
+  aux += tb << 8;
+  aux += cb;
   return aux;
 }
 int Paquete::getLongitudDatos() {
@@ -56,11 +60,11 @@ bool Paquete::estaCompleto() {
 }
 int Paquete::setData(char *data, int dataL) {
   if (dataL < MAX_LEN_DATA)
-    memcpy(this->data, data, dataL);
+    memcpy(this->data, data, (size_t)dataL);
   return 0;
 }
 bool Paquete::getData(char *data) {
-  memcpy(data, this->data, this->getLongitudDatos());
+  memcpy(data, this->data,(size_t)this->getLongitudDatos());
   return false;
 }
 unsigned short Paquete::getId() {
@@ -96,7 +100,8 @@ void Paquete::ensamblar(Paquete pkg) {
       } else {
         this->offset = minOf;
       }
-      this->longitudDatos = pkg.longitudDatos;
+      this->longitudDatos +=
+          pkg.longitudDatos + (maxOf - (longMin + minOf));
     } else if (pkg.mfFlag && this->mfFlag) {
       if ((this->offset > pkg.offset) && (this->offset < (pkg.offset + pkg
           .longitudDatos))) {
@@ -118,9 +123,15 @@ void Paquete::ensamblar(Paquete pkg) {
         this->offset = minOf;
       }
     }
-    this->setData(dataEnsamblada,this->longitudDatos);
+    this->setData(dataEnsamblada, this->longitudDatos);
   }
 }
 int Paquete::getOffset() {
   return this->offset;
+}
+unsigned int Paquete::getSrc() {
+  return this->src;
+}
+unsigned int Paquete::getDst() {
+  return this->dst;
 }
