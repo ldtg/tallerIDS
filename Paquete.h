@@ -25,6 +25,7 @@ class Paquete {
   unsigned short getDosBytes(char header[HEADER_SIZE], int byteInicio);
   unsigned int getCuatroBytes(char header[HEADER_SIZE], int byteInicio);
  public:
+  Paquete();
   Paquete(char header[HEADER_SIZE]);
   int getLongitudDatos();
   int getOffset();
@@ -32,7 +33,7 @@ class Paquete {
   bool getData(char data[MAX_LEN_DATA]);
   bool estaCompleto();
   unsigned short getId();
-  void ensamblar(Paquete &pkg);
+  void ensamblar(Paquete pkg);
 };
 
 #endif //TP2_APP_PAQUETE_H

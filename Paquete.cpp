@@ -5,6 +5,9 @@
 #include <netinet/in.h>
 #include <cstring>
 #include "Paquete.h"
+Paquete::Paquete(){
+
+}
 Paquete::Paquete(char *header) {
   this->id = getDosBytes(header, 4);
   this->longitudDatos = (unsigned short) (getDosBytes(header, 2) - 20);
@@ -39,10 +42,6 @@ unsigned short Paquete::getDosBytes(char *header, int byteInicio) {
 unsigned int Paquete::getCuatroBytes(char *header, int byteInicio) {
   unsigned int aux;
   unsigned int primerS, segundoS;
-  /*aux = (unsigned int) header[byteInicio] << 24 + (unsigned int)
-      header[byteInicio + 1] << 16 + (unsigned int) header[byteInicio + 2] << 8
-                                                + (unsigned int) header[
-                                                    byteInicio + 3];*/
   primerS = getDosBytes(header, byteInicio);
   segundoS = getDosBytes(header, byteInicio + 2);
   aux = primerS << 16;
@@ -67,7 +66,7 @@ bool Paquete::getData(char *data) {
 unsigned short Paquete::getId() {
   return this->id;
 }
-void Paquete::ensamblar(Paquete &pkg) {
+void Paquete::ensamblar(Paquete pkg) {
   char dataEnsamblada[MAX_LEN_DATA] = "";
   int minOf, maxOf, longMin;
   if (!this->completo && !pkg.completo) {
@@ -87,7 +86,6 @@ void Paquete::ensamblar(Paquete &pkg) {
         this->offset = 0;
       } else
         this->offset = minOf;
-
     } else if (!pkg.mfFlag && this->mfFlag) { //pkg es el ultimo
       this->mfFlag = false;
       this->bytesFaltantes =
@@ -98,6 +96,7 @@ void Paquete::ensamblar(Paquete &pkg) {
       } else {
         this->offset = minOf;
       }
+      this->longitudDatos = pkg.longitudDatos;
     } else if (pkg.mfFlag && this->mfFlag) {
       if ((this->offset > pkg.offset) && (this->offset < (pkg.offset + pkg
           .longitudDatos))) {
@@ -111,14 +110,15 @@ void Paquete::ensamblar(Paquete &pkg) {
         //se metio el pkg adentro de this
         this->bytesFaltantes = this->bytesFaltantes - pkg.longitudDatos + pkg
             .bytesFaltantes;
-      } else {
+      } else if (this->offset != pkg.offset) { //Si no son el mismo pkg
         this->bytesFaltantes = this->bytesFaltantes + pkg.bytesFaltantes
-            +(maxOf - (longMin +minOf)); //Largo del Agujero
+            + (maxOf - (longMin + minOf)); //Largo del Agujero
 
         this->longitudDatos += pkg.longitudDatos + this->bytesFaltantes;
         this->offset = minOf;
       }
     }
+    this->setData(dataEnsamblada,this->longitudDatos);
   }
 }
 int Paquete::getOffset() {
