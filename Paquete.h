@@ -19,7 +19,6 @@ class Paquete {
   unsigned int src;
   unsigned int dst;
   bool mfFlag;
- // bool enEnsamble;
   bool completo;
   char data[MAX_LEN_DATA];
   unsigned short getDosBytes(char header[HEADER_SIZE], int byteInicio);
@@ -36,6 +35,20 @@ class Paquete {
   bool estaCompleto();
   unsigned short getId();
   void ensamblar(Paquete pkg);
+  ~Paquete();
+
+  /*Paquete &operator=(Paquete &&other) {
+    this->id = other.id;
+    this->longitudDatos = other.longitudDatos;
+    this->bytesFaltantes = other.bytesFaltantes;
+    this->offset = other.offset;
+    this->src = other.src;
+    this->dst = other.dst;
+    this->mfFlag = other.mfFlag;
+    this->completo = other.completo;
+    this->data = std::move(other.data);
+    return *this;
+  }*/
 };
 
 #endif //TP2_APP_PAQUETE_H

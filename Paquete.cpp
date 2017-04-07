@@ -9,6 +9,8 @@ Paquete::Paquete() {
 
 }
 Paquete::Paquete(char *header) {
+  char aux[HEADER_SIZE];
+  memcpy(aux,header,HEADER_SIZE);
   this->id = getDosBytes(header, 4);
   this->longitudDatos = (unsigned short) (getDosBytes(header, 2) - 20);
   this->mfFlag = (bool) ((header[6] & 32) >> 5);
@@ -19,6 +21,7 @@ Paquete::Paquete(char *header) {
     this->completo = true;
     this->bytesFaltantes = 0;
   } else {
+    this->completo = false;
     if (!this->mfFlag) {
       this->bytesFaltantes = this->offset;
     } else {
@@ -88,8 +91,13 @@ void Paquete::ensamblar(Paquete pkg) {
       if (this->bytesFaltantes == 0) {
         this->completo = true;
         this->offset = 0;
-      } else
+        this->longitudDatos += this->offset;
+      } else{
         this->offset = minOf;
+        this->longitudDatos +=
+            pkg.longitudDatos + (maxOf - (longMin + minOf));
+      }
+
     } else if (!pkg.mfFlag && this->mfFlag) { //pkg es el ultimo
       this->mfFlag = false;
       this->bytesFaltantes =
@@ -102,7 +110,7 @@ void Paquete::ensamblar(Paquete pkg) {
       }
       this->longitudDatos +=
           pkg.longitudDatos + (maxOf - (longMin + minOf));
-    } else if (pkg.mfFlag && this->mfFlag) {
+    } else if (pkg.mfFlag && this->mfFlag) { //Ninguno es el ultimo
       if ((this->offset > pkg.offset) && (this->offset < (pkg.offset + pkg
           .longitudDatos))) {
         //se metio this adentro de pkg
@@ -134,4 +142,7 @@ unsigned int Paquete::getSrc() {
 }
 unsigned int Paquete::getDst() {
   return this->dst;
+}
+Paquete::~Paquete() {
+
 }

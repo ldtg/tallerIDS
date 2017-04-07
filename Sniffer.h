@@ -12,8 +12,6 @@
 class Sniffer {
  private:
   std::ifstream file;
-  std::streampos begin, end, cur;
-  std::streamoff size;
  public:
   Sniffer(std::string filePath);
   Paquete sniff(bool *eof);
