@@ -84,10 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h">
+			<Option target="TP2_APP"/>
+		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.cpp">
@@ -96,10 +126,22 @@
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h">
 			<Option target="TP2_APP"/>
 		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h">
+			<Option target="TP2_APP"/>
+		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Thread.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/main.cpp">

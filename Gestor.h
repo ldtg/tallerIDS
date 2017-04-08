@@ -9,14 +9,10 @@
 #include <stack>
 #include "Paquete.h"
 #include "Id.h"
-//#include "PaqsCompletosMon.h"
-//#include "PaquetesMonitor.h"
 class Gestor {
  private:
   std::map<Id,Paquete> paquetes;
   std::stack<Paquete> paquetesCompletos;
-  // PaqsCompletosMon stackPaqsCompletos;
-  //PaquetesMonitor paquetes;
  public:
   Gestor();
   void agregar(Paquete paqueteNuevo);

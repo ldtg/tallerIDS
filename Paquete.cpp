@@ -73,21 +73,17 @@ void Paquete::ensamblar(Paquete &paqueteNuevo) {
     maxOffset = std::max(this->offset, paqueteNuevo.offset);
     longDatosMinimo = longMinimo(paqueteNuevo);
 
-    if (!this->hayMasFragmentos) { //this es el ultimo
-      ensamblarUltimo(paqueteNuevo, paqueteNuevo.offset, paqueteNuevo
-          .longitudDatos, this->offset);
-    } else if (!paqueteNuevo.hayMasFragmentos) { //paqueteNuevo es el ultimo
-      ensamblarUltimo(paqueteNuevo, this->offset, this->longitudDatos,
-                      paqueteNuevo.offset);
-    } else if (paqueteEstaAdentroThis(paqueteNuevo)) {
+    if (!this->hayMasFragmentos || !paqueteNuevo.hayMasFragmentos){//alguno
+      ensamblarUltimo(paqueteNuevo);                          // es el ultimo
+    } else if (paqueteEstaAdentroThis(paqueteNuevo)) {// __[_[P]_]__
       this->bytesFaltantes -= paqueteNuevo.longitudDatos;
-    } else {                  //Largo del Agujero
+    } else {                  //Paquetes separados __[P]__[P]__
       this->bytesFaltantes += (maxOffset - (longDatosMinimo + minOffset));
       this->longitudDatos += paqueteNuevo.longitudDatos + this->bytesFaltantes;
       this->offset = minOffset;
     }
+    this->setData(dataEnsamblada, this->longitudDatos);
   }
-  this->setData(dataEnsamblada, this->longitudDatos);
 
 }
 unsigned short Paquete::getDosBytes(char *header, int byteInicio) {
@@ -136,14 +132,22 @@ unsigned short Paquete::longMinimo(Paquete &pkg) {
   return longDatosMinimo;
 }
 
-void Paquete::ensamblarUltimo(Paquete &paquete, unsigned short otroOffset,
-                              unsigned short otroLongDatos,
-                              unsigned short ultimoOffset) {
+void Paquete::ensamblarUltimo(Paquete &paquete) {
+  unsigned short ultimoOffset, ultimoLongDatos, otroLongDatos, otroOffset;
+  if(!paquete.hayMasFragmentos){//Paquete es el ultimo
+    ultimoOffset = paquete.offset;
+    ultimoLongDatos = paquete.longitudDatos;
+    otroLongDatos = this->longitudDatos;
+    otroOffset = this->offset;
+  } else{
+    otroOffset = paquete.offset;
+    otroLongDatos = paquete.longitudDatos;
+    ultimoLongDatos = this->longitudDatos;
+    ultimoOffset = this->offset;
+  }
   this->hayMasFragmentos = false;
   this->bytesFaltantes += paquete.bytesFaltantes - otroLongDatos;
-  this->longitudDatos +=
-      paquete.longitudDatos
-          + (ultimoOffset - (otroLongDatos + otroOffset));
+  this->longitudDatos = ultimoOffset + ultimoLongDatos;
   this->completo = (this->bytesFaltantes == 0);
   this->offset = otroOffset;
 }
@@ -159,8 +163,8 @@ bool Paquete::esIdIgual(Paquete &paquete) {
 }
 
 bool Paquete::tieneMismoInicioOfinal(Paquete &paquete) {
-  return (this->offset != paquete.offset) || ((this->offset +
-      this->longitudDatos) != paquete.offset + paquete.longitudDatos);
+  return (this->offset == paquete.offset) || ((this->offset +
+      this->longitudDatos) == (paquete.offset + paquete.longitudDatos));
 }
 
 bool Paquete::ensambleValido(Paquete &paquete) {
@@ -171,4 +175,5 @@ bool Paquete::ensambleValido(Paquete &paquete) {
 unsigned short Paquete::getPaqId() {
   return this->id.getPaqId();
 }
+
 

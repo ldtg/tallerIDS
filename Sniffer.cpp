@@ -58,5 +58,5 @@ Paquete Sniffer::sniff() {
   return nullpkg;
 }
 bool Sniffer::termino() {
-  return file.is_open() && !file.eof();
+  return !file.is_open() || file.eof();
 }

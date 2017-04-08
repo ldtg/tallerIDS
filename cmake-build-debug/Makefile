@@ -123,6 +123,87 @@ TP2_APP/fast:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/build
 .PHONY : TP2_APP/fast
 
+Detector.o: Detector.cpp.o
+
+.PHONY : Detector.o
+
+# target to build an object file
+Detector.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.o
+.PHONY : Detector.cpp.o
+
+Detector.i: Detector.cpp.i
+
+.PHONY : Detector.i
+
+# target to preprocess a source file
+Detector.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.i
+.PHONY : Detector.cpp.i
+
+Detector.s: Detector.cpp.s
+
+.PHONY : Detector.s
+
+# target to generate assembly for a file
+Detector.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.s
+.PHONY : Detector.cpp.s
+
+Gestor.o: Gestor.cpp.o
+
+.PHONY : Gestor.o
+
+# target to build an object file
+Gestor.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.o
+.PHONY : Gestor.cpp.o
+
+Gestor.i: Gestor.cpp.i
+
+.PHONY : Gestor.i
+
+# target to preprocess a source file
+Gestor.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.i
+.PHONY : Gestor.cpp.i
+
+Gestor.s: Gestor.cpp.s
+
+.PHONY : Gestor.s
+
+# target to generate assembly for a file
+Gestor.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.s
+.PHONY : Gestor.cpp.s
+
+GestorMonitor.o: GestorMonitor.cpp.o
+
+.PHONY : GestorMonitor.o
+
+# target to build an object file
+GestorMonitor.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
+.PHONY : GestorMonitor.cpp.o
+
+GestorMonitor.i: GestorMonitor.cpp.i
+
+.PHONY : GestorMonitor.i
+
+# target to preprocess a source file
+GestorMonitor.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.i
+.PHONY : GestorMonitor.cpp.i
+
+GestorMonitor.s: GestorMonitor.cpp.s
+
+.PHONY : GestorMonitor.s
+
+# target to generate assembly for a file
+GestorMonitor.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.s
+.PHONY : GestorMonitor.cpp.s
+
 Id.o: Id.cpp.o
 
 .PHONY : Id.o
@@ -149,6 +230,60 @@ Id.s: Id.cpp.s
 Id.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Id.cpp.s
 .PHONY : Id.cpp.s
+
+Ids.o: Ids.cpp.o
+
+.PHONY : Ids.o
+
+# target to build an object file
+Ids.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ids.cpp.o
+.PHONY : Ids.cpp.o
+
+Ids.i: Ids.cpp.i
+
+.PHONY : Ids.i
+
+# target to preprocess a source file
+Ids.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ids.cpp.i
+.PHONY : Ids.cpp.i
+
+Ids.s: Ids.cpp.s
+
+.PHONY : Ids.s
+
+# target to generate assembly for a file
+Ids.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ids.cpp.s
+.PHONY : Ids.cpp.s
+
+Lock.o: Lock.cpp.o
+
+.PHONY : Lock.o
+
+# target to build an object file
+Lock.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Lock.cpp.o
+.PHONY : Lock.cpp.o
+
+Lock.i: Lock.cpp.i
+
+.PHONY : Lock.i
+
+# target to preprocess a source file
+Lock.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Lock.cpp.i
+.PHONY : Lock.cpp.i
+
+Lock.s: Lock.cpp.s
+
+.PHONY : Lock.s
+
+# target to generate assembly for a file
+Lock.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Lock.cpp.s
+.PHONY : Lock.cpp.s
 
 Paquete.o: Paquete.cpp.o
 
@@ -177,6 +312,33 @@ Paquete.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Paquete.cpp.s
 .PHONY : Paquete.cpp.s
 
+Regla.o: Regla.cpp.o
+
+.PHONY : Regla.o
+
+# target to build an object file
+Regla.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.o
+.PHONY : Regla.cpp.o
+
+Regla.i: Regla.cpp.i
+
+.PHONY : Regla.i
+
+# target to preprocess a source file
+Regla.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.i
+.PHONY : Regla.cpp.i
+
+Regla.s: Regla.cpp.s
+
+.PHONY : Regla.s
+
+# target to generate assembly for a file
+Regla.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.s
+.PHONY : Regla.cpp.s
+
 Sniffer.o: Sniffer.cpp.o
 
 .PHONY : Sniffer.o
@@ -203,6 +365,33 @@ Sniffer.s: Sniffer.cpp.s
 Sniffer.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Sniffer.cpp.s
 .PHONY : Sniffer.cpp.s
+
+Thread.o: Thread.cpp.o
+
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
+
+Thread.i: Thread.cpp.i
+
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
+
+Thread.s: Thread.cpp.s
+
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +429,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TP2_APP"
+	@echo "... Detector.o"
+	@echo "... Detector.i"
+	@echo "... Detector.s"
+	@echo "... Gestor.o"
+	@echo "... Gestor.i"
+	@echo "... Gestor.s"
+	@echo "... GestorMonitor.o"
+	@echo "... GestorMonitor.i"
+	@echo "... GestorMonitor.s"
 	@echo "... Id.o"
 	@echo "... Id.i"
 	@echo "... Id.s"
+	@echo "... Ids.o"
+	@echo "... Ids.i"
+	@echo "... Ids.s"
+	@echo "... Lock.o"
+	@echo "... Lock.i"
+	@echo "... Lock.s"
 	@echo "... Paquete.o"
 	@echo "... Paquete.i"
 	@echo "... Paquete.s"
+	@echo "... Regla.o"
+	@echo "... Regla.i"
+	@echo "... Regla.s"
 	@echo "... Sniffer.o"
 	@echo "... Sniffer.i"
 	@echo "... Sniffer.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

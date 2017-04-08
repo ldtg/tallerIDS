@@ -5,7 +5,6 @@
 #ifndef TP2_APP_ID_H
 #define TP2_APP_ID_H
 
-#include "Paquete.h"
 class Id {
  private:
   unsigned int src;

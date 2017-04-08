@@ -13,12 +13,16 @@ void Gestor::agregar(Paquete paqueteNuevo) {
     paqueteActual = paquetes.at(paqueteNuevo.getId());
     paqueteActual.ensamblar(paqueteNuevo);
     paquetes[paqueteNuevo.getId()] = paqueteActual;
+    if (paqueteActual.estaCompleto()) {
+      paquetesCompletos.push(paqueteActual);
+    }
   } else {
     paquetes[paqueteNuevo.getId()] = paqueteNuevo;
+    if (paqueteNuevo.estaCompleto()) {
+      paquetesCompletos.push(paqueteNuevo);
+    }
   }
-  if (paqueteActual.estaCompleto()) {
-    paquetesCompletos.push(paqueteActual);
-  }
+
 }
 bool Gestor::hayNuevoPaquete() {
   return !paquetesCompletos.empty();

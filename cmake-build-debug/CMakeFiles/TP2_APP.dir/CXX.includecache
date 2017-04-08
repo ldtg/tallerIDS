@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
+Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
+Gestor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
 map
@@ -17,6 +25,12 @@ Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
 Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp
+GestorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
 mutex
@@ -29,8 +43,10 @@ Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
-Paquete.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp
+Ids.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
 Thread.h
@@ -39,6 +55,14 @@ Sniffer.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
 GestorMonitor.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.cpp
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+mutex
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.cpp
 netinet/in.h
@@ -60,6 +84,10 @@ bitset
 Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 string
 -
@@ -79,6 +107,10 @@ string
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Thread.cpp
+Thread.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h
 thread

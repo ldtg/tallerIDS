@@ -6,21 +6,8 @@
 #include "Detector.h"
 #include "Regla.h"
 int main() {
-/*  Gestor gestor;
+  GestorMonitor gestor;
   Ids ids("packets.cap",gestor);
-  ids.run();*/
-  Paquete paquete;
-  Sniffer sniffer("one.cap");
-  while(!sniffer.termino()){
-    paquete = sniffer.sniff();
-    std::cout << "ID:" << paquete.getPaqId() << std::endl;
-    std::cout << "Long:" << paquete.getLongitudDatos() << std::endl;
-    char data[MAX_LEN_DATA];
-    paquete.getData(data);
-    for (int i = 0; i < paquete.getLongitudDatos(); i++) {
-      std::cout << data[i];
-    }
-    std::cout << std::endl;
-  }
+  ids.run();
   return 0;
 }

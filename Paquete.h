@@ -20,16 +20,12 @@ class Paquete {
   unsigned int getCuatroBytes(char header[HEADER_SIZE], int byteInicio);
   void toZero();
   void ensamblarDatos(char ensamblada[MAX_LEN_DATA], Paquete &pkg);
-  void ensamblarUltimo(Paquete &paquete,
-                       unsigned short otroOffset,
-                       unsigned short otroLongDatos,
-                       unsigned short ultimoOffset);
-  void ensamblarAdentro(Paquete &paquete,
-                        unsigned short adentroOffset,
-                        unsigned short adentroLongDatos,
-                        unsigned short afueraOffset,
-                        unsigned short afueraLongDatos);
-  unsigned short longMinimo(unsigned short minOffset, Paquete &pkg);
+  void ensamblarUltimo(Paquete &paquete);
+  bool paqueteEstaAdentroThis(Paquete &paquete);
+  bool esIdIgual(Paquete &paquete);
+  bool tieneMismoInicioOfinal(Paquete &paquete);
+  bool ensambleValido(Paquete &paquete);
+  unsigned short longMinimo(Paquete &pkg);
  public:
   Paquete();
   Paquete(char header[HEADER_SIZE]);
@@ -45,25 +41,8 @@ class Paquete {
   void ensamblar(Paquete &paqueteNuevo);
   ~Paquete();
 
-  /*Paquete &operator=(Paquete &&other) {
-    this->paqid = other.paqid;
-    this->longitudDatos = other.longitudDatos;
-    this->bytesFaltantes = other.bytesFaltantes;
-    this->offset = other.offset;
-    this->src = other.src;
-    this->dst = other.dst;
-    this->hayMasFragmentos = other.hayMasFragmentos;
-    this->completo = other.completo;
-    this->data = std::move(other.data);
-    return *this;
-  }*/
 
-  bool thisEstaAdentroPaquete(Paquete &paquete);
-  bool paqueteEstaAdentroThis(Paquete &paquete);
-  bool esIdIgual(Paquete &paquete);
-  bool tieneMismoInicioOfinal(Paquete &paquete);
-  bool ensambleValido(Paquete &paquete);
-  unsigned short longMinimo(Paquete &pkg);
+
 };
 
 #endif //TP2_APP_PAQUETE_H
