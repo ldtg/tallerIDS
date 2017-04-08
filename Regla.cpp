@@ -18,5 +18,5 @@ Regla::Regla(std::string regla) {
   src = (unsigned int)std::stoi(tokens.at(0), nullptr, 16);
   dst = (unsigned int)std::stoi(tokens.at(1), nullptr, 16);
   threshold = (unsigned int)std::stoi(tokens.at(2), nullptr, 16);
-  
+
 }

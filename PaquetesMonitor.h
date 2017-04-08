@@ -15,7 +15,7 @@ class PaquetesMonitor {
   std::mutex mutexMap;
  public:
   PaquetesMonitor();
-  bool agregarPaquete(Paquete paqueteNuevo);
+  void agregarPaquete(Paquete paqueteNuevo);
   Paquete get_si_completo(Id id);
 };
 

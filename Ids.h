@@ -6,15 +6,15 @@
 #define TP2_APP_IDS_H
 
 #include "Thread.h"
-#include "Ensamblador.h"
 #include "Sniffer.h"
+#include "GestorMonitor.h"
 class Ids : public Thread{
  private:
-  Ensamblador& ensamblador;
+  GestorMonitor& gestor;
   Sniffer sniffer;
   //Detector& detector;
  public:
-  Ids(std::string archivo, Ensamblador& ens);
+  Ids(std::string archivo, GestorMonitor& gest);
   virtual void run();
 
 };

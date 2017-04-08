@@ -10,11 +10,15 @@ class Id {
  private:
   unsigned int src;
   unsigned int dst;
-  unsigned short id;
+  unsigned short paqid;
  public:
-  Id(Paquete paq);
+  Id(unsigned int src, unsigned int dst, unsigned short id);
+  Id();
   bool operator ==(const Id &p) const;
   bool operator <(const Id &p) const;
+  unsigned int getSrc();
+  unsigned int getDst();
+  unsigned short getPaqId();
 
 };
 

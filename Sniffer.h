@@ -12,9 +12,12 @@
 class Sniffer {
  private:
   std::ifstream file;
+  bool eof;
  public:
   Sniffer(std::string filePath);
-  Paquete sniff(bool *eof);
+  //Paquete sniff(bool *eof);
+  Paquete sniff();
+  bool termino();
   ~Sniffer();
 };
 

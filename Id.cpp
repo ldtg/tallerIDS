@@ -4,11 +4,25 @@
 
 #include "Id.h"
 bool Id::operator==(const Id &p) const {
-  return ((this->id == p.id) && (this->dst == p.dst) && (this->src == p.src));
+  return ((this->paqid == p.paqid) && (this->dst == p.dst) && (this->src == p.src));
 }
-Id::Id(Paquete paq) : id(paq.getId()), src(paq.getSrc()), dst(paq.getDst()){
 
-}
 bool Id::operator<(const Id &p) const {
-  return (this->dst < p.dst) || (this->id< p.id) || (this->src < p.src);
+  return (this->dst < p.dst) || (this->paqid< p.paqid) || (this->src < p.src);
+}
+Id::Id(unsigned int src, unsigned int dst, unsigned short id): src(src), dst
+    (dst), paqid(id) {}
+unsigned int Id::getSrc() {
+  return this->src;
+}
+unsigned int Id::getDst() {
+  return this->dst;
+}
+unsigned short Id::getPaqId() {
+  return this->paqid;
+}
+Id::Id() {
+  this->paqid = 0;
+  this->dst = 0;
+  this->src = 0;
 }
