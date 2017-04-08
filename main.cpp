@@ -3,10 +3,12 @@
 #include "Sniffer.h"
 #include "Ensamblador.h"
 #include "Ids.h"
+#include "Detector.h"
+#include "Regla.h"
 int main() {
-  std::cout << std::endl;
-  Ensamblador ensamblador;
+/*  Ensamblador ensamblador;
   Ids ids("packets.cap",ensamblador);
-  ids.run();
+  ids.run();*/
+  Regla regla("Hola como estas");
   return 0;
 }

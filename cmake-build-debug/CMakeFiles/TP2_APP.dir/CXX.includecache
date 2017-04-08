@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
+Detector.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp
 Ensamblador.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
@@ -94,6 +100,16 @@ Paquete.h
 Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+string
+-
+Paquete.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp
 Sniffer.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
@@ -127,4 +143,8 @@ Ensamblador.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
 Ids.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
+Detector.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Detector.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Id.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Ids.cpp.o"
@@ -11,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tg/FIUBA/taller/tp2/TP2_APP/PaqsCompletosMon.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/PaqsCompletosMon.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Paquete.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/PaquetesMonitor.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/PaquetesMonitor.cpp.o"
+  "/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Regla.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Sniffer.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Thread.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Thread.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/main.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/main.cpp.o"

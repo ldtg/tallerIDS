@@ -44,7 +44,6 @@ unsigned short Paquete::getDosBytes(char *header, int byteInicio) {
 
 unsigned int Paquete::getCuatroBytes(char *header, int byteInicio) {
   unsigned int pb, sb, tb, cb, aux;
-  unsigned int primerS, segundoS;
   pb = (unsigned int) header[byteInicio] & (255);
   sb = (unsigned int) header[byteInicio + 1] & (255);
   tb = (unsigned int) header[byteInicio + 2] & (255);

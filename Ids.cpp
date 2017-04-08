@@ -3,8 +3,8 @@
 //
 
 #include "Ids.h"
-Ids::Ids(std::string archivo, Ensamblador &ens) : sniffer(archivo),
-                                                  ensamblador(ens) {}
+Ids::Ids(std::string archivo, Ensamblador &ens) : ensamblador(ens),
+                                                  sniffer(archivo){}
 void Ids::run() {
   bool eof = false;
   bool nuevoP= false;

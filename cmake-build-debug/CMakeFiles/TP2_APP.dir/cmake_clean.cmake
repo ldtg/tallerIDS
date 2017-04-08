@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP2_APP.dir/Thread.cpp.o"
   "CMakeFiles/TP2_APP.dir/Ids.cpp.o"
   "CMakeFiles/TP2_APP.dir/Id.cpp.o"
+  "CMakeFiles/TP2_APP.dir/Detector.cpp.o"
+  "CMakeFiles/TP2_APP.dir/Regla.cpp.o"
   "TP2_APP.pdb"
   "TP2_APP"
 )

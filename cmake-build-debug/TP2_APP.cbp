@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h">
+			<Option target="TP2_APP"/>
+		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>
@@ -124,6 +130,12 @@
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/PaquetesMonitor.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp">

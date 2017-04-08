@@ -123,6 +123,33 @@ TP2_APP/fast:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/build
 .PHONY : TP2_APP/fast
 
+Detector.o: Detector.cpp.o
+
+.PHONY : Detector.o
+
+# target to build an object file
+Detector.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.o
+.PHONY : Detector.cpp.o
+
+Detector.i: Detector.cpp.i
+
+.PHONY : Detector.i
+
+# target to preprocess a source file
+Detector.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.i
+.PHONY : Detector.cpp.i
+
+Detector.s: Detector.cpp.s
+
+.PHONY : Detector.s
+
+# target to generate assembly for a file
+Detector.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.s
+.PHONY : Detector.cpp.s
+
 Ensamblador.o: Ensamblador.cpp.o
 
 .PHONY : Ensamblador.o
@@ -312,6 +339,33 @@ PaquetesMonitor.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/PaquetesMonitor.cpp.s
 .PHONY : PaquetesMonitor.cpp.s
 
+Regla.o: Regla.cpp.o
+
+.PHONY : Regla.o
+
+# target to build an object file
+Regla.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.o
+.PHONY : Regla.cpp.o
+
+Regla.i: Regla.cpp.i
+
+.PHONY : Regla.i
+
+# target to preprocess a source file
+Regla.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.i
+.PHONY : Regla.cpp.i
+
+Regla.s: Regla.cpp.s
+
+.PHONY : Regla.s
+
+# target to generate assembly for a file
+Regla.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.s
+.PHONY : Regla.cpp.s
+
 Sniffer.o: Sniffer.cpp.o
 
 .PHONY : Sniffer.o
@@ -402,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TP2_APP"
+	@echo "... Detector.o"
+	@echo "... Detector.i"
+	@echo "... Detector.s"
 	@echo "... Ensamblador.o"
 	@echo "... Ensamblador.i"
 	@echo "... Ensamblador.s"
@@ -423,6 +480,9 @@ help:
 	@echo "... PaquetesMonitor.o"
 	@echo "... PaquetesMonitor.i"
 	@echo "... PaquetesMonitor.s"
+	@echo "... Regla.o"
+	@echo "... Regla.i"
+	@echo "... Regla.s"
 	@echo "... Sniffer.o"
 	@echo "... Sniffer.i"
 	@echo "... Sniffer.s"
