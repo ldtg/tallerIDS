@@ -10,7 +10,7 @@ void GestorMonitor::agregar(Paquete &paquete) {
 }
 bool GestorMonitor::siHayPaqueteNuevoObtener(Paquete *paquete) {
   Lock lock(mutexGestor);
-  if(this->gestor.hayNuevoPaquete()){
+  if (this->gestor.hayNuevoPaquete()) {
     *paquete = this->gestor.obtenerSiguientePaqueteCompleto();
     return true;
   }

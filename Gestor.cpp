@@ -22,14 +22,13 @@ void Gestor::agregar(Paquete paqueteNuevo) {
       paquetesCompletos.push(paqueteNuevo);
     }
   }
-
 }
 bool Gestor::hayNuevoPaquete() {
   return !paquetesCompletos.empty();
 }
 Paquete Gestor::obtenerSiguientePaqueteCompleto() {
   Paquete aux;
-  if(this->hayNuevoPaquete()){
+  if (this->hayNuevoPaquete()) {
     aux = paquetesCompletos.top();
     paquetesCompletos.pop();
   }

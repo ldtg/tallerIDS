@@ -3,42 +3,19 @@
 //
 
 #include "Sniffer.h"
-Sniffer::Sniffer(std::string filePath) : file(filePath, std::ios::binary) ,
-                                         eof(false){
-}
-/*Paquete Sniffer::sniff(bool *eof) {
-  *eof = false;
-  char header[HEADER_SIZE] = "";
-  Paquete nullpkg;
-  if (file.is_open() && !file.eof()) {
-    file.read(header, HEADER_SIZE);
-    if (file.eof()) {
-      *eof = true;
-      return nullpkg;
-    }
-
-    Paquete paquete(header);
-    int dataL = paquete.getLongitudDatos();
-    char data[MAX_LEN_DATA];
-    file.read(data, dataL);
-    paquete.setData(data, dataL);
-    if (file.eof()) {
-      *eof = true;
-    }
-    return paquete;
-  }
-  *eof = true;
-  return nullpkg;
-}*/
+Sniffer::Sniffer(std::string filePath) : file(filePath, std::ios::binary),
+                                         eof(false) {}
 Sniffer::~Sniffer() {
   if (file.is_open())
     file.close();
 }
 Paquete Sniffer::sniff() {
-  char header[HEADER_SIZE] = "";
+  std::vector<char> header;
   Paquete nullpkg;
   if (!this->termino()) {
-    file.read(header, HEADER_SIZE);
+    //file.read(header, HEADER_SIZE);
+    header.resize(HEADER_SIZE);
+    file.read(&header[0], HEADER_SIZE);
     if (file.eof()) {
       this->eof = true;
       return nullpkg;
@@ -46,8 +23,8 @@ Paquete Sniffer::sniff() {
 
     Paquete paquete(header);
     int dataL = paquete.getLongitudDatos();
-    char data[MAX_LEN_DATA];
-    file.read(data, dataL);
+    std::vector<char> data(dataL);
+    file.read(&data[0], dataL);
     paquete.setData(data, dataL);
     if (file.eof()) {
       this->eof = true;

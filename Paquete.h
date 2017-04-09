@@ -15,11 +15,12 @@ class Paquete {
   unsigned short offset;
   bool hayMasFragmentos;
   bool completo;
-  char data[MAX_LEN_DATA];
-  unsigned short getDosBytes(char header[HEADER_SIZE], int byteInicio);
-  unsigned int getCuatroBytes(char header[HEADER_SIZE], int byteInicio);
+  //char data[MAX_LEN_DATA];
+  std::vector<char> data;
+  unsigned short getDosBytes(std::vector<char> header, int byteInicio);
+  unsigned int getCuatroBytes(std::vector<char> header, int byteInicio);
   void toZero();
-  void ensamblarDatos(char ensamblada[MAX_LEN_DATA], Paquete &pkg);
+  std::vector<char> ensamblarDatos(Paquete &pkg);
   void ensamblarUltimo(Paquete &paquete);
   bool paqueteEstaAdentroThis(Paquete &paquete);
   bool esIdIgual(Paquete &paquete);
@@ -28,20 +29,19 @@ class Paquete {
   unsigned short longMinimo(Paquete &pkg);
  public:
   Paquete();
-  Paquete(char header[HEADER_SIZE]);
+  //Paquete(char header[HEADER_SIZE]);
+  Paquete(std::vector<char> header);
   int getLongitudDatos();
   unsigned int getSrc();
   unsigned int getDst();
   unsigned short getPaqId();
   int getOffset();
-  void setData(char data[MAX_LEN_DATA], int dataL);
-  bool getData(char data[MAX_LEN_DATA]);
+  void setData( std::vector<char> data, size_t dataL);
+  std::vector<char> getData();
   bool estaCompleto();
   Id getId();
   void ensamblar(Paquete &paqueteNuevo);
   ~Paquete();
-
-
 
 };
 
