@@ -7,10 +7,20 @@
 #IncludeRegexTransform: 
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
+fstream
+-
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+ReglaAlways.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+ReglaAny.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
+ReglaAll.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
 Gestor.h
@@ -65,8 +75,6 @@ mutex
 -
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.cpp
-netinet/in.h
--
 cstring
 -
 algorithm
@@ -87,6 +95,8 @@ Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp
+algorithm
+-
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 
@@ -95,6 +105,32 @@ string
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp
+ReglaAll.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
+algorithm
+-
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp
+ReglaAlways.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp
+ReglaAny.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
+Regla.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp
 Sniffer.h

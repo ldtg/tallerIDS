@@ -2,7 +2,6 @@
 // Created by tg on 06/04/17.
 //
 
-#include <netinet/in.h>
 #include <cstring>
 #include <algorithm>
 #include "Paquete.h"
@@ -118,7 +117,7 @@ void Paquete::toZero() {
   this->offset = 0;
   this->hayMasFragmentos = false;
   this->completo = false;
-  std::fill(this->data.begin(), this->data.end(), 0);
+  this->data.clear();
 
 }
 std::vector<char> Paquete::ensamblarDatos(Paquete &pkg) {
@@ -182,6 +181,3 @@ bool Paquete::ensambleValido(Paquete &paquete) {
 unsigned short Paquete::getPaqId() {
   return this->id.getPaqId();
 }
-
-
-

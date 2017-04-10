@@ -15,7 +15,6 @@ class Paquete {
   unsigned short offset;
   bool hayMasFragmentos;
   bool completo;
-  //char data[MAX_LEN_DATA];
   std::vector<char> data;
   unsigned short getDosBytes(std::vector<char> header, int byteInicio);
   unsigned int getCuatroBytes(std::vector<char> header, int byteInicio);
@@ -29,9 +28,9 @@ class Paquete {
   unsigned short longMinimo(Paquete &pkg);
  public:
   Paquete();
-  //Paquete(char header[HEADER_SIZE]);
   Paquete(std::vector<char> header);
   int getLongitudDatos();
+  Id getId();
   unsigned int getSrc();
   unsigned int getDst();
   unsigned short getPaqId();
@@ -39,7 +38,6 @@ class Paquete {
   void setData( std::vector<char> data, size_t dataL);
   std::vector<char> getData();
   bool estaCompleto();
-  Id getId();
   void ensamblar(Paquete &paqueteNuevo);
   ~Paquete();
 

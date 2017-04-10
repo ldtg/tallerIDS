@@ -3,6 +3,12 @@
 
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Detector.cpp
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Detector.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Id.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Paquete.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Regla.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAll.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAlways.h
+CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAny.h
 
 CMakeFiles/TP2_APP.dir/Gestor.cpp.o: ../Gestor.cpp
 CMakeFiles/TP2_APP.dir/Gestor.cpp.o: ../Gestor.h
@@ -39,6 +45,24 @@ CMakeFiles/TP2_APP.dir/Regla.cpp.o: ../Id.h
 CMakeFiles/TP2_APP.dir/Regla.cpp.o: ../Paquete.h
 CMakeFiles/TP2_APP.dir/Regla.cpp.o: ../Regla.cpp
 CMakeFiles/TP2_APP.dir/Regla.cpp.o: ../Regla.h
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../Id.h
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../Paquete.h
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../Regla.h
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../ReglaAll.cpp
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../ReglaAll.h
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../Id.h
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../Paquete.h
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../Regla.h
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../ReglaAlways.cpp
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../ReglaAlways.h
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../Id.h
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../Paquete.h
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../Regla.h
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../ReglaAny.cpp
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../ReglaAny.h
 
 CMakeFiles/TP2_APP.dir/Sniffer.cpp.o: ../Id.h
 CMakeFiles/TP2_APP.dir/Sniffer.cpp.o: ../Paquete.h

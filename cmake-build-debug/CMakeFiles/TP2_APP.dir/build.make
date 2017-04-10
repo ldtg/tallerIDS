@@ -321,6 +321,78 @@ CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides: CMakeFiles/TP2_APP.dir/Gest
 CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
 
 
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: ../ReglaAll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/ReglaAll.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp > CMakeFiles/TP2_APP.dir/ReglaAll.cpp.i
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/ReglaAll.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp -o CMakeFiles/TP2_APP.dir/ReglaAll.cpp.s
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires:
+
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.provides: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.provides
+
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
+
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o: ../ReglaAny.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/ReglaAny.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp > CMakeFiles/TP2_APP.dir/ReglaAny.cpp.i
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/ReglaAny.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp -o CMakeFiles/TP2_APP.dir/ReglaAny.cpp.s
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires:
+
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.provides: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.provides
+
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
+
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o: ../ReglaAlways.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp > CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.i
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp -o CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.s
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires:
+
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides
+
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
+
+
 # Object files for target TP2_APP
 TP2_APP_OBJECTS = \
 "CMakeFiles/TP2_APP.dir/main.cpp.o" \
@@ -333,7 +405,10 @@ TP2_APP_OBJECTS = \
 "CMakeFiles/TP2_APP.dir/Id.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Detector.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Regla.cpp.o" \
-"CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o"
+"CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o" \
+"CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o" \
+"CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o" \
+"CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o"
 
 # External object files for target TP2_APP
 TP2_APP_EXTERNAL_OBJECTS =
@@ -349,9 +424,12 @@ TP2_APP: CMakeFiles/TP2_APP.dir/Id.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Detector.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Regla.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/build.make
 TP2_APP: CMakeFiles/TP2_APP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable TP2_APP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable TP2_APP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP2_APP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +448,9 @@ CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Id.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Detector.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Regla.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires
 
 .PHONY : CMakeFiles/TP2_APP.dir/requires
 

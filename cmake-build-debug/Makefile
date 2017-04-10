@@ -339,6 +339,87 @@ Regla.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Regla.cpp.s
 .PHONY : Regla.cpp.s
 
+ReglaAll.o: ReglaAll.cpp.o
+
+.PHONY : ReglaAll.o
+
+# target to build an object file
+ReglaAll.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
+.PHONY : ReglaAll.cpp.o
+
+ReglaAll.i: ReglaAll.cpp.i
+
+.PHONY : ReglaAll.i
+
+# target to preprocess a source file
+ReglaAll.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAll.cpp.i
+.PHONY : ReglaAll.cpp.i
+
+ReglaAll.s: ReglaAll.cpp.s
+
+.PHONY : ReglaAll.s
+
+# target to generate assembly for a file
+ReglaAll.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAll.cpp.s
+.PHONY : ReglaAll.cpp.s
+
+ReglaAlways.o: ReglaAlways.cpp.o
+
+.PHONY : ReglaAlways.o
+
+# target to build an object file
+ReglaAlways.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
+.PHONY : ReglaAlways.cpp.o
+
+ReglaAlways.i: ReglaAlways.cpp.i
+
+.PHONY : ReglaAlways.i
+
+# target to preprocess a source file
+ReglaAlways.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.i
+.PHONY : ReglaAlways.cpp.i
+
+ReglaAlways.s: ReglaAlways.cpp.s
+
+.PHONY : ReglaAlways.s
+
+# target to generate assembly for a file
+ReglaAlways.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.s
+.PHONY : ReglaAlways.cpp.s
+
+ReglaAny.o: ReglaAny.cpp.o
+
+.PHONY : ReglaAny.o
+
+# target to build an object file
+ReglaAny.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
+.PHONY : ReglaAny.cpp.o
+
+ReglaAny.i: ReglaAny.cpp.i
+
+.PHONY : ReglaAny.i
+
+# target to preprocess a source file
+ReglaAny.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAny.cpp.i
+.PHONY : ReglaAny.cpp.i
+
+ReglaAny.s: ReglaAny.cpp.s
+
+.PHONY : ReglaAny.s
+
+# target to generate assembly for a file
+ReglaAny.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ReglaAny.cpp.s
+.PHONY : ReglaAny.cpp.s
+
 Sniffer.o: Sniffer.cpp.o
 
 .PHONY : Sniffer.o
@@ -453,6 +534,15 @@ help:
 	@echo "... Regla.o"
 	@echo "... Regla.i"
 	@echo "... Regla.s"
+	@echo "... ReglaAll.o"
+	@echo "... ReglaAll.i"
+	@echo "... ReglaAll.s"
+	@echo "... ReglaAlways.o"
+	@echo "... ReglaAlways.i"
+	@echo "... ReglaAlways.s"
+	@echo "... ReglaAny.o"
+	@echo "... ReglaAny.i"
+	@echo "... ReglaAny.s"
 	@echo "... Sniffer.o"
 	@echo "... Sniffer.i"
 	@echo "... Sniffer.s"

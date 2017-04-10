@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP2_APP.dir/Detector.cpp.o"
   "CMakeFiles/TP2_APP.dir/Regla.cpp.o"
   "CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o"
+  "CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o"
+  "CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o"
+  "CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o"
   "TP2_APP.pdb"
   "TP2_APP"
 )

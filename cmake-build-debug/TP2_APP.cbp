@@ -132,6 +132,24 @@
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h">
 			<Option target="TP2_APP"/>
 		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp">
+			<Option target="TP2_APP"/>
+		</Unit>
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h">
+			<Option target="TP2_APP"/>
+		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>

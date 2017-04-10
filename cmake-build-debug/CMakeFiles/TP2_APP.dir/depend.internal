@@ -4,6 +4,12 @@
 CMakeFiles/TP2_APP.dir/Detector.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
 CMakeFiles/TP2_APP.dir/Gestor.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
@@ -40,6 +46,24 @@ CMakeFiles/TP2_APP.dir/Regla.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
+CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
 CMakeFiles/TP2_APP.dir/Sniffer.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h

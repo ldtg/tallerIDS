@@ -13,7 +13,6 @@ Paquete Sniffer::sniff() {
   std::vector<char> header;
   Paquete nullpkg;
   if (!this->termino()) {
-    //file.read(header, HEADER_SIZE);
     header.resize(HEADER_SIZE);
     file.read(&header[0], HEADER_SIZE);
     if (file.eof()) {
