@@ -3,6 +3,8 @@
 //
 
 #include "Sniffer.h"
+#include <string>
+#include <vector>
 Sniffer::Sniffer(std::string filePath) : file(filePath, std::ios::binary),
                                          eof(false) {}
 Sniffer::~Sniffer() {

@@ -3,12 +3,16 @@
 //
 
 #include "ReglaAlways.h"
-
+#include <string>
+#include <vector>
 bool ReglaAlways::aplicar(Paquete &paquete) {
-   if(Regla::SDTAplica(paquete)){
-     threshold--;
-     return true;
-   }
+  if (Regla::SDAplica(paquete)) {
+    if (threshold > 1) {
+      threshold--;
+      return false;
+    }
+    return true;
+  }
   return false;
 }
 

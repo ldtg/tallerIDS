@@ -6,10 +6,12 @@
 #define TP2_APP_REGLAALL_H
 
 #include "Regla.h"
-class ReglaAll : public Regla{
+#include <string>
+#include <vector>
+class ReglaAll : public Regla {
  public:
   ReglaAll(unsigned int src, unsigned int dst, unsigned int threshold,
-              std::vector<std::string> words);
+           std::vector<std::string> words);
   virtual bool aplicar(Paquete &paquete) override;
 };
 

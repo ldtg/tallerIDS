@@ -13,12 +13,11 @@ class Id {
  public:
   Id(unsigned int src, unsigned int dst, unsigned short id);
   Id();
-  bool operator ==(const Id &p) const;
-  bool operator <(const Id &p) const;
-  unsigned int getSrc();
-  unsigned int getDst();
-  unsigned short getPaqId();
-
+  bool operator==(const Id &p) const;
+  bool operator<(const Id &p) const;
+  unsigned int getSrc() const;
+  unsigned int getDst() const;
+  unsigned short getPaqId() const;
 };
 
 #endif //TP2_APP_ID_H

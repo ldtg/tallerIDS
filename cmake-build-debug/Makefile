@@ -150,59 +150,59 @@ Detector.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.s
 .PHONY : Detector.cpp.s
 
-Gestor.o: Gestor.cpp.o
+Ensamblador.o: Ensamblador.cpp.o
 
-.PHONY : Gestor.o
-
-# target to build an object file
-Gestor.cpp.o:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.o
-.PHONY : Gestor.cpp.o
-
-Gestor.i: Gestor.cpp.i
-
-.PHONY : Gestor.i
-
-# target to preprocess a source file
-Gestor.cpp.i:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.i
-.PHONY : Gestor.cpp.i
-
-Gestor.s: Gestor.cpp.s
-
-.PHONY : Gestor.s
-
-# target to generate assembly for a file
-Gestor.cpp.s:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.s
-.PHONY : Gestor.cpp.s
-
-GestorMonitor.o: GestorMonitor.cpp.o
-
-.PHONY : GestorMonitor.o
+.PHONY : Ensamblador.o
 
 # target to build an object file
-GestorMonitor.cpp.o:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
-.PHONY : GestorMonitor.cpp.o
+Ensamblador.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o
+.PHONY : Ensamblador.cpp.o
 
-GestorMonitor.i: GestorMonitor.cpp.i
+Ensamblador.i: Ensamblador.cpp.i
 
-.PHONY : GestorMonitor.i
+.PHONY : Ensamblador.i
 
 # target to preprocess a source file
-GestorMonitor.cpp.i:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.i
-.PHONY : GestorMonitor.cpp.i
+Ensamblador.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ensamblador.cpp.i
+.PHONY : Ensamblador.cpp.i
 
-GestorMonitor.s: GestorMonitor.cpp.s
+Ensamblador.s: Ensamblador.cpp.s
 
-.PHONY : GestorMonitor.s
+.PHONY : Ensamblador.s
 
 # target to generate assembly for a file
-GestorMonitor.cpp.s:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.s
-.PHONY : GestorMonitor.cpp.s
+Ensamblador.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ensamblador.cpp.s
+.PHONY : Ensamblador.cpp.s
+
+EnsambladorMonitor.o: EnsambladorMonitor.cpp.o
+
+.PHONY : EnsambladorMonitor.o
+
+# target to build an object file
+EnsambladorMonitor.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o
+.PHONY : EnsambladorMonitor.cpp.o
+
+EnsambladorMonitor.i: EnsambladorMonitor.cpp.i
+
+.PHONY : EnsambladorMonitor.i
+
+# target to preprocess a source file
+EnsambladorMonitor.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.i
+.PHONY : EnsambladorMonitor.cpp.i
+
+EnsambladorMonitor.s: EnsambladorMonitor.cpp.s
+
+.PHONY : EnsambladorMonitor.s
+
+# target to generate assembly for a file
+EnsambladorMonitor.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.s
+.PHONY : EnsambladorMonitor.cpp.s
 
 Id.o: Id.cpp.o
 
@@ -257,6 +257,33 @@ Ids.s: Ids.cpp.s
 Ids.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ids.cpp.s
 .PHONY : Ids.cpp.s
+
+ImpresionMonitor.o: ImpresionMonitor.cpp.o
+
+.PHONY : ImpresionMonitor.o
+
+# target to build an object file
+ImpresionMonitor.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
+.PHONY : ImpresionMonitor.cpp.o
+
+ImpresionMonitor.i: ImpresionMonitor.cpp.i
+
+.PHONY : ImpresionMonitor.i
+
+# target to preprocess a source file
+ImpresionMonitor.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i
+.PHONY : ImpresionMonitor.cpp.i
+
+ImpresionMonitor.s: ImpresionMonitor.cpp.s
+
+.PHONY : ImpresionMonitor.s
+
+# target to generate assembly for a file
+ImpresionMonitor.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s
+.PHONY : ImpresionMonitor.cpp.s
 
 Lock.o: Lock.cpp.o
 
@@ -513,18 +540,21 @@ help:
 	@echo "... Detector.o"
 	@echo "... Detector.i"
 	@echo "... Detector.s"
-	@echo "... Gestor.o"
-	@echo "... Gestor.i"
-	@echo "... Gestor.s"
-	@echo "... GestorMonitor.o"
-	@echo "... GestorMonitor.i"
-	@echo "... GestorMonitor.s"
+	@echo "... Ensamblador.o"
+	@echo "... Ensamblador.i"
+	@echo "... Ensamblador.s"
+	@echo "... EnsambladorMonitor.o"
+	@echo "... EnsambladorMonitor.i"
+	@echo "... EnsambladorMonitor.s"
 	@echo "... Id.o"
 	@echo "... Id.i"
 	@echo "... Id.s"
 	@echo "... Ids.o"
 	@echo "... Ids.i"
 	@echo "... Ids.s"
+	@echo "... ImpresionMonitor.o"
+	@echo "... ImpresionMonitor.i"
+	@echo "... ImpresionMonitor.s"
 	@echo "... Lock.o"
 	@echo "... Lock.i"
 	@echo "... Lock.s"

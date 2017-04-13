@@ -9,6 +9,10 @@
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
 fstream
 -
+string
+-
+vector
+-
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 ReglaAlways.h
@@ -17,36 +21,48 @@ ReglaAny.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
 ReglaAll.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+ImpresionMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+string
+-
+vector
+-
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
-Gestor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp
+mutex
+-
+Ensamblador.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
 map
 -
-stack
+vector
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
 Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp
-GestorMonitor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp
+EnsambladorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
 Lock.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
 mutex
 -
-Gestor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
+Ensamblador.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp
 Id.h
@@ -57,14 +73,42 @@ Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp
 Ids.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
 Thread.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h
 Sniffer.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
-GestorMonitor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+EnsambladorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
+Detector.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+string
+-
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp
+iostream
+-
+string
+-
+ImpresionMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+mutex
+-
+sstream
+-
+string
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.cpp
 Lock.h
@@ -78,6 +122,10 @@ mutex
 cstring
 -
 algorithm
+-
+vector
+-
+string
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
@@ -99,9 +147,15 @@ algorithm
 -
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 string
+-
+vector
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
@@ -111,30 +165,58 @@ ReglaAll.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
 algorithm
 -
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.cpp
 ReglaAlways.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.cpp
 ReglaAny.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.cpp
 Sniffer.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
+string
+-
+vector
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
 iostream
@@ -157,20 +239,10 @@ thread
 /home/tg/FIUBA/taller/tp2/TP2_APP/main.cpp
 iostream
 -
+string
+-
 vector
 -
-algorithm
--
-Paquete.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
-Sniffer.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
-Gestor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
 Ids.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
-Detector.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
-Regla.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
 

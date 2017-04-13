@@ -5,20 +5,23 @@ CMakeFiles/TP2_APP.dir/Detector.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAlways.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o
- /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
- /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
- /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
- /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp
- /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
@@ -26,14 +29,22 @@ CMakeFiles/TP2_APP.dir/Id.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o
- /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
- /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 CMakeFiles/TP2_APP.dir/Lock.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.cpp
  /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
@@ -74,10 +85,11 @@ CMakeFiles/TP2_APP.dir/Thread.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Thread.h
 CMakeFiles/TP2_APP.dir/main.cpp.o
  /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
- /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.h
- /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
+ /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
  /home/tg/FIUBA/taller/tp2/TP2_APP/Sniffer.h

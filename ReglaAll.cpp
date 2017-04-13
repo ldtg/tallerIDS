@@ -4,11 +4,13 @@
 
 #include "ReglaAll.h"
 #include <algorithm>
+#include <string>
+#include <vector>
 bool ReglaAll::aplicar(Paquete &paquete) {
   std::vector<bool> boolWords(words.size());
   std::string auxWord;
   std::vector<std::string>::iterator it;
-  if(!Regla::SDTAplica(paquete))
+  if (!Regla::SDAplica(paquete))
     return false;
 
   for (it = words.begin(); it != words.end(); it++) {
@@ -16,14 +18,17 @@ bool ReglaAll::aplicar(Paquete &paquete) {
       if (byte != 0) {
         auxWord.push_back(byte);
         boolWords[std::distance(words.begin(), it)] =
-            auxWord.find(*it, 0) != auxWord.length();
+            auxWord.find(*it, 0) != std::string::npos;
       } else {
         auxWord.erase();
       }
     }
   }
   if (std::find(boolWords.begin(), boolWords.end(), false) == boolWords.end()) {
-    threshold--;
+    if (threshold > 1) {
+      threshold--;
+      return false;
+    }
     return true;
   }
   return false;
@@ -35,5 +40,4 @@ ReglaAll::ReglaAll(unsigned int src,
                                                            dst,
                                                            threshold,
                                                            words) {
-
 }

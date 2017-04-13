@@ -1,30 +1,35 @@
-//
-// Created by tg on 07/04/17.
-//
-
 #include "Ids.h"
-Ids::Ids(std::string archivo, GestorMonitor &gest) : gestor(gest),
-                                                     sniffer(archivo) {}
-void Ids::run() {
-  Paquete paqueteNuevo;
-  while (!sniffer.termino()) {
-    while (!sniffer.termino()
-        && !gestor.siHayPaqueteNuevoObtener(&paqueteNuevo)) {
-      Paquete paquete = sniffer.sniff();
-      gestor.agregar(paquete);
-    }
-    //AnalizarPaquetenuevo
-    if (!sniffer.termino()) {
-      std::cout << "ID:" << paqueteNuevo.getPaqId() << std::endl;
-      std::cout << "Long:" << paqueteNuevo.getLongitudDatos() << std::endl;
-      std::vector<char> data;
-      data = paqueteNuevo.getData();
-      for (int i = 0; i < paqueteNuevo.getLongitudDatos(); i++) {
-        std::cout << data[i];
-      }
-      std::cout << std::endl;
-    }
+#include "Lock.h"
+#include <string>
+#include <vector>
+Ids::Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor, Detector
+&dtk)
+    : ensambladorMonitor(ensambladorMonitor),
+      sniffer(archivo), detector(dtk) {}
 
+void Ids::run() {
+  bool nuevoCompleto = false;
+  while (!sniffer.termino()) {
+    Paquete paqueteNuevo;
+
+    while (!sniffer.termino() && !nuevoCompleto) {
+      Paquete paquete = sniffer.sniff();
+            if (paquete.estaCompleto()) {
+        paqueteNuevo = paquete;
+        nuevoCompleto = true;
+      } else {
+        if (!paquete.estaVacio()){
+          paqueteNuevo = ensambladorMonitor.agregar(paquete);
+        }
+        if (paqueteNuevo.estaCompleto()) {
+          nuevoCompleto = true;
+        }
+      }
+    }
+    nuevoCompleto = false;
+    if(paqueteNuevo.estaCompleto()){
+      detector.aplicar(paqueteNuevo);
+    }
   }
 }
 

@@ -6,6 +6,8 @@
 #define TP2_APP_REGLAALWAYS_H
 
 #include "Regla.h"
+#include <string>
+#include <vector>
 class ReglaAlways : public Regla{
  public:
   ReglaAlways(unsigned int src, unsigned int dst, unsigned int threshold,

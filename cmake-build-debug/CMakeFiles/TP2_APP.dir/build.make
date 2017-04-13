@@ -153,28 +153,28 @@ CMakeFiles/TP2_APP.dir/Lock.cpp.o.provides: CMakeFiles/TP2_APP.dir/Lock.cpp.o.re
 CMakeFiles/TP2_APP.dir/Lock.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Lock.cpp.o
 
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o: ../Gestor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TP2_APP.dir/Gestor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/Gestor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o: ../Ensamblador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/Gestor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp > CMakeFiles/TP2_APP.dir/Gestor.cpp.i
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/Ensamblador.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp > CMakeFiles/TP2_APP.dir/Ensamblador.cpp.i
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/Gestor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/Gestor.cpp -o CMakeFiles/TP2_APP.dir/Gestor.cpp.s
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/Ensamblador.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp -o CMakeFiles/TP2_APP.dir/Ensamblador.cpp.s
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o.requires:
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.requires:
 
-.PHONY : CMakeFiles/TP2_APP.dir/Gestor.cpp.o.requires
+.PHONY : CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.requires
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o.provides: CMakeFiles/TP2_APP.dir/Gestor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Gestor.cpp.o.provides.build
-.PHONY : CMakeFiles/TP2_APP.dir/Gestor.cpp.o.provides
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.provides: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.provides
 
-CMakeFiles/TP2_APP.dir/Gestor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Gestor.cpp.o
+CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o
 
 
 CMakeFiles/TP2_APP.dir/Thread.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
@@ -297,28 +297,28 @@ CMakeFiles/TP2_APP.dir/Regla.cpp.o.provides: CMakeFiles/TP2_APP.dir/Regla.cpp.o.
 CMakeFiles/TP2_APP.dir/Regla.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Regla.cpp.o
 
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o: ../GestorMonitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o: ../EnsambladorMonitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp > CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.i
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp > CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.i
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/GestorMonitor.cpp -o CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.s
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp -o CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.s
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.requires:
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.requires:
 
-.PHONY : CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.requires
+.PHONY : CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.requires
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides.build
-.PHONY : CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.provides: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.provides
 
-CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
+CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o
 
 
 CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
@@ -393,22 +393,47 @@ CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides: CMakeFiles/TP2_APP.dir/ReglaA
 CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
 
 
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o: ../ImpresionMonitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp
+
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp > CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i
+
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp -o CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s
+
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires:
+
+.PHONY : CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
+
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides
+
+CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
+
+
 # Object files for target TP2_APP
 TP2_APP_OBJECTS = \
 "CMakeFiles/TP2_APP.dir/main.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Paquete.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Sniffer.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Lock.cpp.o" \
-"CMakeFiles/TP2_APP.dir/Gestor.cpp.o" \
+"CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Thread.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Ids.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Id.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Detector.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Regla.cpp.o" \
-"CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o" \
+"CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o" \
 "CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o" \
 "CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o" \
-"CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o"
+"CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o" \
+"CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o"
 
 # External object files for target TP2_APP
 TP2_APP_EXTERNAL_OBJECTS =
@@ -417,19 +442,20 @@ TP2_APP: CMakeFiles/TP2_APP.dir/main.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Paquete.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Sniffer.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Lock.cpp.o
-TP2_APP: CMakeFiles/TP2_APP.dir/Gestor.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Thread.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Ids.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Id.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Detector.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Regla.cpp.o
-TP2_APP: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/build.make
 TP2_APP: CMakeFiles/TP2_APP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable TP2_APP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable TP2_APP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP2_APP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -441,16 +467,17 @@ CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/main.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Paquete.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Sniffer.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Lock.cpp.o.requires
-CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Gestor.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Thread.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Ids.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Id.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Detector.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Regla.cpp.o.requires
-CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/GestorMonitor.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
 
 .PHONY : CMakeFiles/TP2_APP.dir/requires
 
