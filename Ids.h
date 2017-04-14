@@ -5,15 +5,16 @@
 #include "Sniffer.h"
 #include "EnsambladorMonitor.h"
 #include "Detector.h"
+#include "DetectorMonitor.h"
 #include <string>
 class Ids : public Thread {
  private:
   EnsambladorMonitor &ensambladorMonitor;
   Sniffer sniffer;
-  Detector &detector;
+  DetectorMonitor &detector;
  public:
-  Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor, Detector
-  &dtk);
+  Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor,
+      DetectorMonitor &dtk);
   virtual void run();
 };
 

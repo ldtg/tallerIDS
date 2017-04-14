@@ -1,11 +1,7 @@
-//
-// Created by tg on 09/04/17.
-//
-
 #include "ReglaAlways.h"
 #include <string>
 #include <vector>
-bool ReglaAlways::aplicar(Paquete &paquete) {
+bool ReglaAlways::aplicar(const Paquete &paquete) {
   if (Regla::SDAplica(paquete)) {
     if (threshold > 1) {
       threshold--;

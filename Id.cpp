@@ -1,7 +1,3 @@
-//
-// Created by tg on 07/04/17.
-//
-
 #include "Id.h"
 bool Id::operator==(const Id &p) const {
   return ((this->paqid == p.paqid) && (this->dst == p.dst)

@@ -16,11 +16,11 @@ class Regla {
   std::vector<std::string> words;
   bool dstAplica(unsigned int src);
   bool srcAplica(unsigned int src);
-  bool SDAplica(Paquete &paquete);
+  bool SDAplica(const Paquete &paquete);
  public:
   Regla(unsigned int src, unsigned int dst, unsigned int threshold,
         std::vector<std::string> words);
-  virtual bool aplicar(Paquete &paquete) = 0;
+  virtual bool aplicar(const Paquete &paquete) = 0;
   virtual ~Regla();
 };
 

@@ -1,12 +1,8 @@
-//
-// Created by tg on 09/04/17.
-//
-
 #include "ReglaAll.h"
 #include <algorithm>
 #include <string>
 #include <vector>
-bool ReglaAll::aplicar(Paquete &paquete) {
+bool ReglaAll::aplicar(const Paquete &paquete) {
   std::vector<bool> boolWords(words.size());
   std::string auxWord;
   std::vector<std::string>::iterator it;

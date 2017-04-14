@@ -1,33 +1,25 @@
 #include "Ids.h"
-#include "Lock.h"
 #include <string>
 #include <vector>
-Ids::Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor, Detector
-&dtk)
+Ids::Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor,
+         DetectorMonitor &dtk)
     : ensambladorMonitor(ensambladorMonitor),
       sniffer(archivo), detector(dtk) {}
 
 void Ids::run() {
-  bool nuevoCompleto = false;
   while (!sniffer.termino()) {
+    bool nuevoCompleto = false;
     Paquete paqueteNuevo;
-
     while (!sniffer.termino() && !nuevoCompleto) {
-      Paquete paquete = sniffer.sniff();
-            if (paquete.estaCompleto()) {
-        paqueteNuevo = paquete;
+      paqueteNuevo = sniffer.sniff();
+      if (paqueteNuevo.estaCompleto()) {
         nuevoCompleto = true;
-      } else {
-        if (!paquete.estaVacio()){
-          paqueteNuevo = ensambladorMonitor.agregar(paquete);
-        }
-        if (paqueteNuevo.estaCompleto()) {
-          nuevoCompleto = true;
-        }
+      } else if (!paqueteNuevo.estaVacio()) {
+        paqueteNuevo = ensambladorMonitor.agregar(paqueteNuevo);
+        nuevoCompleto = paqueteNuevo.estaCompleto();
       }
     }
-    nuevoCompleto = false;
-    if(paqueteNuevo.estaCompleto()){
+    if (paqueteNuevo.estaCompleto()) {
       detector.aplicar(paqueteNuevo);
     }
   }

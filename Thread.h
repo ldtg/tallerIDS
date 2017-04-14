@@ -1,7 +1,3 @@
-//
-// Created by tg on 07/04/17.
-//
-
 #ifndef TP2_APP_THREAD_H
 #define TP2_APP_THREAD_H
 

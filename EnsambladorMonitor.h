@@ -1,7 +1,3 @@
-//
-// Created by tg on 08/04/17.
-//
-
 #ifndef TP2_APP_GESTORMONITOR_H
 #define TP2_APP_GESTORMONITOR_H
 
@@ -10,13 +6,12 @@
 class EnsambladorMonitor {
  private:
   Ensamblador ensamblador;
-  std::mutex &mutex;
+  std::mutex mutex;
  public:
-  explicit EnsambladorMonitor(std::mutex &mutex);
-  Paquete agregar(Paquete paquete);
+  explicit EnsambladorMonitor();
+  Paquete agregar(const Paquete& paquete);
   EnsambladorMonitor(const EnsambladorMonitor &) = delete;
   EnsambladorMonitor &operator=(const EnsambladorMonitor &) = delete;
-  //Paquete siHayPaqueteNuevoObtener();
   ~EnsambladorMonitor();
 };
 

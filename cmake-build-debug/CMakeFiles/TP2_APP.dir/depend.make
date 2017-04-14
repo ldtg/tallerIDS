@@ -5,12 +5,20 @@ CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Detector.cpp
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Detector.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Id.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ImpresionMonitor.h
-CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Lock.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Paquete.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../Regla.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAll.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAlways.h
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: ../ReglaAny.h
+
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../Detector.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../DetectorMonitor.cpp
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../DetectorMonitor.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../Id.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../ImpresionMonitor.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../Lock.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../Paquete.h
+CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../Regla.h
 
 CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o: ../Ensamblador.cpp
 CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o: ../Ensamblador.h
@@ -29,13 +37,13 @@ CMakeFiles/TP2_APP.dir/Id.cpp.o: ../Id.cpp
 CMakeFiles/TP2_APP.dir/Id.cpp.o: ../Id.h
 
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Detector.h
+CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../DetectorMonitor.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Ensamblador.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../EnsambladorMonitor.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Id.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Ids.cpp
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Ids.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../ImpresionMonitor.h
-CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Lock.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Paquete.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Regla.h
 CMakeFiles/TP2_APP.dir/Ids.cpp.o: ../Sniffer.h
@@ -84,6 +92,7 @@ CMakeFiles/TP2_APP.dir/Thread.cpp.o: ../Thread.cpp
 CMakeFiles/TP2_APP.dir/Thread.cpp.o: ../Thread.h
 
 CMakeFiles/TP2_APP.dir/main.cpp.o: ../Detector.h
+CMakeFiles/TP2_APP.dir/main.cpp.o: ../DetectorMonitor.h
 CMakeFiles/TP2_APP.dir/main.cpp.o: ../Ensamblador.h
 CMakeFiles/TP2_APP.dir/main.cpp.o: ../EnsambladorMonitor.h
 CMakeFiles/TP2_APP.dir/main.cpp.o: ../Id.h

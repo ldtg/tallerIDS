@@ -13,6 +13,8 @@ string
 -
 vector
 -
+algorithm
+-
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 ReglaAlways.h
@@ -21,8 +23,6 @@ ReglaAny.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAny.h
 ReglaAll.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/ReglaAll.h
-Lock.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 Regla.h
@@ -34,8 +34,22 @@ string
 vector
 -
 
+/home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.cpp
+DetectorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
+Lock.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+
+/home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
+Detector.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp
 mutex
+-
+algorithm
+-
+vector
 -
 Ensamblador.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
@@ -73,8 +87,6 @@ Id.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp
 Ids.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h
-Lock.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 string
 -
 vector
@@ -89,6 +101,8 @@ EnsambladorMonitor.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
+DetectorMonitor.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
 string
 -
 

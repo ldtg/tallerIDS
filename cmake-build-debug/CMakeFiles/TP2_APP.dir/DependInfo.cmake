@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Detector.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Detector.cpp.o"
+  "/home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o"
   "/home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp" "/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles/TP2_APP.dir/Id.cpp.o"

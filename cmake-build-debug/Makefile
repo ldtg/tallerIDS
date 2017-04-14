@@ -150,6 +150,33 @@ Detector.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Detector.cpp.s
 .PHONY : Detector.cpp.s
 
+DetectorMonitor.o: DetectorMonitor.cpp.o
+
+.PHONY : DetectorMonitor.o
+
+# target to build an object file
+DetectorMonitor.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o
+.PHONY : DetectorMonitor.cpp.o
+
+DetectorMonitor.i: DetectorMonitor.cpp.i
+
+.PHONY : DetectorMonitor.i
+
+# target to preprocess a source file
+DetectorMonitor.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.i
+.PHONY : DetectorMonitor.cpp.i
+
+DetectorMonitor.s: DetectorMonitor.cpp.s
+
+.PHONY : DetectorMonitor.s
+
+# target to generate assembly for a file
+DetectorMonitor.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.s
+.PHONY : DetectorMonitor.cpp.s
+
 Ensamblador.o: Ensamblador.cpp.o
 
 .PHONY : Ensamblador.o
@@ -540,6 +567,9 @@ help:
 	@echo "... Detector.o"
 	@echo "... Detector.i"
 	@echo "... Detector.s"
+	@echo "... DetectorMonitor.o"
+	@echo "... DetectorMonitor.i"
+	@echo "... DetectorMonitor.s"
 	@echo "... Ensamblador.o"
 	@echo "... Ensamblador.i"
 	@echo "... Ensamblador.s"

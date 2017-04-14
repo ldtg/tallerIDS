@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o"
   "CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o"
   "CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o"
+  "CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o"
   "TP2_APP.pdb"
   "TP2_APP"
 )

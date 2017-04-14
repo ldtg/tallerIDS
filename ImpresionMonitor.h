@@ -1,7 +1,3 @@
-//
-// Created by tg on 11/04/17.
-//
-
 #ifndef TP2_APP_IMPRESIONMONITOR_H
 #define TP2_APP_IMPRESIONMONITOR_H
 

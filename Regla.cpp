@@ -1,6 +1,3 @@
-//
-// Created by tg on 07/04/17.
-//
 #include <algorithm>
 
 #include "Regla.h"
@@ -18,7 +15,7 @@ bool Regla::dstAplica(unsigned int dst) {
   }
   return true;
 }
-bool Regla::SDAplica(Paquete &paquete) {
+bool Regla::SDAplica(const Paquete &paquete) {
   bool src, dst;
   src = srcAplica(paquete.getSrc());
   dst = dstAplica(paquete.getDst());

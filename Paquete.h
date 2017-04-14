@@ -25,19 +25,16 @@ class Paquete {
   void ensamblarUltimo(const Paquete &paquete);
   bool paqueteEstaAdentroThis(const Paquete &paquete) const;
   bool esIdIgual(const Paquete &paquete) const;
-  bool tieneMismoInicioOfinal(const Paquete &paquete) const;
   bool ensambleValido(const Paquete &paquete) const;
   unsigned short longMinimo(const Paquete &pkg) const;
 
  public:
   Paquete();
   explicit Paquete(const std::vector<char> &header);
-  int getLongitudDatos() const;
+  unsigned short getLongitudDatos() const;
   Id getId() const;
   unsigned int getSrc() const;
   unsigned int getDst() const;
-  unsigned short getPaqId() const;
-  int getOffset() const;
   void setData(const std::vector<char> &data, size_t dataL);
   std::vector<char> getData() const;
   bool estaCompleto() const;
@@ -46,6 +43,7 @@ class Paquete {
 
   Paquete(const Paquete& paq);
   Paquete& operator=(const Paquete& paq);
+  bool operator==(const Paquete& paq);
   ~Paquete();
 };
 #endif //TP2_APP_PAQUETE_H

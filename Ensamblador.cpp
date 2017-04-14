@@ -1,15 +1,15 @@
-//
-// Created by tg on 07/04/17.
-//
-
 #include <mutex>
+#include <algorithm>
+#include <vector>
 #include "Ensamblador.h"
 #include "Lock.h"
 
 Paquete Ensamblador::agregar(Paquete paqueteNuevo) {
-  if (esta(paqueteNuevo)) {
-    size_t pos;
-    pos = posicion(paqueteNuevo);
+  std::vector<Paquete>::iterator encontrado = std::find(paquetes.begin(),
+                                                       paquetes.end
+      (), paqueteNuevo);
+  if (encontrado != paquetes.end()) {
+    size_t pos = (size_t)std::distance(paquetes.begin(),encontrado);
     Paquete paqueteActual = paquetes.at(pos);
     paqueteActual.ensamblar(paqueteNuevo);
     paquetes[pos] = paqueteActual;
@@ -24,18 +24,4 @@ Ensamblador::~Ensamblador() {
   paquetes.clear();
 }
 Ensamblador::Ensamblador() {
-}
-bool Ensamblador::esta(Paquete paquete) {
-  for (auto &&item : paquetes) {
-    if(paquete.getId() == item.getId())
-      return true;
-  }
-  return false;
-}
-size_t Ensamblador::posicion(Paquete paquete) {
-  for (size_t i = 0; i< paquetes.size(); i++) {
-    if(paquetes[i].getId() == paquete.getId())
-      return i;
-  }
-  return 0;
 }

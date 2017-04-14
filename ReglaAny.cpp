@@ -1,11 +1,7 @@
-//
-// Created by tg on 09/04/17.
-//
-
 #include "ReglaAny.h"
 #include <string>
 #include <vector>
-bool ReglaAny::aplicar(Paquete &paquete) {
+bool ReglaAny::aplicar(const Paquete &paquete) {
   std::string auxWord;
   std::vector<std::string>::iterator it;
   if (!Regla::SDAplica(paquete))

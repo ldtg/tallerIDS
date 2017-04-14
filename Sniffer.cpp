@@ -1,7 +1,3 @@
-//
-// Created by tg on 06/04/17.
-//
-
 #include "Sniffer.h"
 #include <string>
 #include <vector>
@@ -23,7 +19,7 @@ Paquete Sniffer::sniff() {
     }
 
     Paquete paquete(header);
-    int dataL = paquete.getLongitudDatos();
+    size_t dataL = paquete.getLongitudDatos();
     std::vector<char> data(dataL);
     file.read(&data[0], dataL);
     paquete.setData(data, dataL);

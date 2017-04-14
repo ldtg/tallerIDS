@@ -37,9 +37,7 @@ Paquete::Paquete(const std::vector<char> &header) {
 Paquete::~Paquete() {
   this->toZero();
 }
-int Paquete::getOffset() const {
-  return this->offset;
-}
+
 unsigned int Paquete::getSrc() const {
   return this->id.getSrc();
 }
@@ -47,7 +45,7 @@ unsigned int Paquete::getDst() const {
   return this->id.getDst();
 }
 
-int Paquete::getLongitudDatos() const {
+unsigned short Paquete::getLongitudDatos() const {
   return this->longitudDatos;
 }
 void Paquete::setData(const std::vector<char> &data, size_t dataL) {
@@ -103,15 +101,11 @@ byteInicio) const {
 
 unsigned int Paquete::getCuatroBytes(const std::vector<char> &header, int
 byteInicio) const {
-  unsigned int pb, sb, tb, cb, aux;
-  pb = (unsigned int) header[byteInicio] & (255);
-  sb = (unsigned int) header[byteInicio + 1] & (255);
-  tb = (unsigned int) header[byteInicio + 2] & (255);
-  cb = (unsigned int) header[byteInicio + 3] & (255);
-  aux = pb << 24;
-  aux += sb << 16;
-  aux += tb << 8;
-  aux += cb;
+  unsigned int aux;
+  aux = ((unsigned int) header[byteInicio] & (255)) << 24;
+  aux += ((unsigned int) header[byteInicio + 1] & (255)) << 16;
+  aux += ((unsigned int) header[byteInicio + 2] & (255)) << 8;
+  aux += (unsigned int) header[byteInicio + 3] & (255);
   return aux;
 }
 void Paquete::toZero() {
@@ -173,18 +167,10 @@ bool Paquete::esIdIgual(const Paquete &paquete) const {
   return this->id == paquete.id;
 }
 
-bool Paquete::tieneMismoInicioOfinal(const Paquete &paquete) const {
-  return (this->offset == paquete.offset) || ((this->offset +
-      this->longitudDatos) == (paquete.offset + paquete.longitudDatos));
-}
-
 bool Paquete::ensambleValido(const Paquete &paquete) const {
   return !this->completo && !paquete.completo && esIdIgual(paquete);
 }
 
-unsigned short Paquete::getPaqId() const {
-  return this->id.getPaqId();
-}
 bool Paquete::estaVacio() const {
   return this->id.getDst() == 0 && this->id.getSrc() == 0;
 }
@@ -209,5 +195,8 @@ Paquete &Paquete::operator=(const Paquete &paq) {
   this->data.resize(paq.data.size());
   std::copy(paq.data.begin(), paq.data.end(), this->data.begin());
   return *this;
+}
+bool Paquete::operator==(const Paquete &paq) {
+  return paq.getId() == this->getId();
 }
 
