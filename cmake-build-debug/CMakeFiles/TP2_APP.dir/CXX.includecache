@@ -37,9 +37,13 @@ DetectorMonitor.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
 Lock.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
+string
+-
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
 mutex
+-
+string
 -
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h

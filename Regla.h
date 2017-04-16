@@ -13,9 +13,9 @@ class Regla {
   bool dstAplica(unsigned int src);
   bool srcAplica(unsigned int src);
   bool SDAplica(const Paquete &paquete);
- public:
   Regla(unsigned int src, unsigned int dst, unsigned int threshold,
         std::vector<std::string> words);
+ public:
   virtual bool aplicar(const Paquete &paquete) = 0;
   virtual ~Regla();
 };

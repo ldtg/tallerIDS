@@ -38,9 +38,9 @@ void Paquete::ensamblar(const Paquete &paqueteNuevo) {
 
     if (!this->hayMasFragmentos || !paqueteNuevo.hayMasFragmentos) {//alguno
       ensamblarUltimo(paqueteNuevo);                          // es el ultimo
-    } else if (paqueteEstaAdentroThis(paqueteNuevo)) {// __[_[P]_]__
+    } else if (paqueteEstaAdentroThis(paqueteNuevo)) {// __[T[PN]T]__
       this->bytesFaltantes -= paqueteNuevo.longitudDatos;
-    } else {                  //Paquetes separados __[P]__[P]__
+    } else {                  //Paquetes separados __[T]__[PN]__
       this->bytesFaltantes += (maxOffset - (longDatosMinimo + minOffset));
       this->longitudDatos += paqueteNuevo.longitudDatos + this->bytesFaltantes;
       this->offset = minOffset;
@@ -106,6 +106,7 @@ byteInicio) const {
   aux += (unsigned int) header[byteInicio + 3] & (255);
   return aux;
 }
+
 void Paquete::toZero() {
   this->longitudDatos = 0;
   this->bytesFaltantes = 0;
@@ -114,6 +115,7 @@ void Paquete::toZero() {
   this->completo = false;
   this->data.clear();
 }
+
 std::vector<char> Paquete::ensamblarDatos(const Paquete &pkg) {
   std::vector<char> ensamblada(MAX_LEN_DATA);
   std::copy_n(this->data.begin(), this->longitudDatos, ensamblada.begin()
@@ -123,6 +125,7 @@ std::vector<char> Paquete::ensamblarDatos(const Paquete &pkg) {
               ensamblada.begin() + pkg.offset);
   return ensamblada;
 }
+
 unsigned short Paquete::longMinimo(const Paquete &pkg) const {
   unsigned short longDatosMinimo = 0;
   if (std::min(this->offset, pkg.offset) == this->offset)
