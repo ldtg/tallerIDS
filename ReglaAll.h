@@ -1,7 +1,3 @@
-//
-// Created by tg on 09/04/17.
-//
-
 #ifndef TP2_APP_REGLAALL_H
 #define TP2_APP_REGLAALL_H
 
@@ -13,6 +9,7 @@ class ReglaAll : public Regla {
   ReglaAll(unsigned int src, unsigned int dst, unsigned int threshold,
            std::vector<std::string> words);
   virtual bool aplicar(const Paquete &paquete) override;
+  ~ReglaAll();
 };
 
 #endif //TP2_APP_REGLAALL_H

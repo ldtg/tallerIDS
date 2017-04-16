@@ -5,11 +5,12 @@
 int main(int argc, char *argv[]) {
   if (argc < 2)
     return 1;
+
   EnsambladorMonitor ensamblador;
-  ImpresionMonitor impresor;
-  DetectorMonitor dtk(argv[1], impresor);
+  DetectorMonitor dtk(argv[1]);
   std::vector<Thread *> threads;
   std::vector<std::string> files;
+
   for (int i = 2; i < argc; i++) {
     std::string cString = argv[i];
     files.push_back(cString);
@@ -24,5 +25,6 @@ int main(int argc, char *argv[]) {
     thread->join();
     delete thread;
   }
+
   return 0;
 }

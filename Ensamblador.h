@@ -4,17 +4,13 @@
 #include <map>
 #include <vector>
 #include "Paquete.h"
-#include "Id.h"
+#include "IdPaquete.h"
 class Ensamblador {
  private:
   std::vector<Paquete> paquetes;
-  bool esta(Paquete paquete);
-  size_t posicion(Paquete paquete);
  public:
   Ensamblador();
   Paquete agregar(Paquete paqueteNuevo);
-  Ensamblador(const Ensamblador&) = delete;
-  Ensamblador& operator=(const Ensamblador&) = delete;
   ~Ensamblador();
 };
 

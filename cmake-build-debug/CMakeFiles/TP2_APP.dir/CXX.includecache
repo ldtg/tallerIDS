@@ -27,8 +27,6 @@ ReglaAll.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 Regla.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.h
-ImpresionMonitor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
 string
 -
 vector
@@ -41,6 +39,8 @@ Lock.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
+mutex
+-
 Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 
@@ -63,8 +63,8 @@ vector
 -
 Paquete.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Paquete.h
-Id.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+IdPaquete.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.cpp
 EnsambladorMonitor.h
@@ -78,11 +78,11 @@ mutex
 Ensamblador.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ensamblador.h
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp
-Id.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.cpp
+IdPaquete.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.h
 
-/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp
 Ids.h
@@ -103,24 +103,6 @@ Detector.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/Detector.h
 DetectorMonitor.h
 /home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.h
-string
--
-
-/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp
-iostream
--
-string
--
-ImpresionMonitor.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
-Lock.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.h
-
-/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h
-mutex
--
-sstream
--
 string
 -
 
@@ -153,8 +135,8 @@ vector
 -
 bitset
 -
-Id.h
-/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h
+IdPaquete.h
+/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.h
 
 /home/tg/FIUBA/taller/tp2/TP2_APP/Regla.cpp
 algorithm

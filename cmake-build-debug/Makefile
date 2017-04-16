@@ -231,32 +231,32 @@ EnsambladorMonitor.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.s
 .PHONY : EnsambladorMonitor.cpp.s
 
-Id.o: Id.cpp.o
+IdPaquete.o: IdPaquete.cpp.o
 
-.PHONY : Id.o
+.PHONY : IdPaquete.o
 
 # target to build an object file
-Id.cpp.o:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Id.cpp.o
-.PHONY : Id.cpp.o
+IdPaquete.cpp.o:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o
+.PHONY : IdPaquete.cpp.o
 
-Id.i: Id.cpp.i
+IdPaquete.i: IdPaquete.cpp.i
 
-.PHONY : Id.i
+.PHONY : IdPaquete.i
 
 # target to preprocess a source file
-Id.cpp.i:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Id.cpp.i
-.PHONY : Id.cpp.i
+IdPaquete.cpp.i:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/IdPaquete.cpp.i
+.PHONY : IdPaquete.cpp.i
 
-Id.s: Id.cpp.s
+IdPaquete.s: IdPaquete.cpp.s
 
-.PHONY : Id.s
+.PHONY : IdPaquete.s
 
 # target to generate assembly for a file
-Id.cpp.s:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Id.cpp.s
-.PHONY : Id.cpp.s
+IdPaquete.cpp.s:
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/IdPaquete.cpp.s
+.PHONY : IdPaquete.cpp.s
 
 Ids.o: Ids.cpp.o
 
@@ -284,33 +284,6 @@ Ids.s: Ids.cpp.s
 Ids.cpp.s:
 	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Ids.cpp.s
 .PHONY : Ids.cpp.s
-
-ImpresionMonitor.o: ImpresionMonitor.cpp.o
-
-.PHONY : ImpresionMonitor.o
-
-# target to build an object file
-ImpresionMonitor.cpp.o:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
-.PHONY : ImpresionMonitor.cpp.o
-
-ImpresionMonitor.i: ImpresionMonitor.cpp.i
-
-.PHONY : ImpresionMonitor.i
-
-# target to preprocess a source file
-ImpresionMonitor.cpp.i:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i
-.PHONY : ImpresionMonitor.cpp.i
-
-ImpresionMonitor.s: ImpresionMonitor.cpp.s
-
-.PHONY : ImpresionMonitor.s
-
-# target to generate assembly for a file
-ImpresionMonitor.cpp.s:
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s
-.PHONY : ImpresionMonitor.cpp.s
 
 Lock.o: Lock.cpp.o
 
@@ -576,15 +549,12 @@ help:
 	@echo "... EnsambladorMonitor.o"
 	@echo "... EnsambladorMonitor.i"
 	@echo "... EnsambladorMonitor.s"
-	@echo "... Id.o"
-	@echo "... Id.i"
-	@echo "... Id.s"
+	@echo "... IdPaquete.o"
+	@echo "... IdPaquete.i"
+	@echo "... IdPaquete.s"
 	@echo "... Ids.o"
 	@echo "... Ids.i"
 	@echo "... Ids.s"
-	@echo "... ImpresionMonitor.o"
-	@echo "... ImpresionMonitor.i"
-	@echo "... ImpresionMonitor.s"
 	@echo "... Lock.o"
 	@echo "... Lock.i"
 	@echo "... Lock.s"

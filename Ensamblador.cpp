@@ -4,12 +4,13 @@
 #include "Ensamblador.h"
 #include "Lock.h"
 
+Ensamblador::Ensamblador() {}
+
 Paquete Ensamblador::agregar(Paquete paqueteNuevo) {
-  std::vector<Paquete>::iterator encontrado = std::find(paquetes.begin(),
-                                                       paquetes.end
-      (), paqueteNuevo);
+  std::vector<Paquete>::iterator encontrado;
+  encontrado = std::find(paquetes.begin(), paquetes.end(), paqueteNuevo);
   if (encontrado != paquetes.end()) {
-    size_t pos = (size_t)std::distance(paquetes.begin(),encontrado);
+    size_t pos = (size_t) std::distance(paquetes.begin(), encontrado);
     Paquete paqueteActual = paquetes.at(pos);
     paqueteActual.ensamblar(paqueteNuevo);
     paquetes[pos] = paqueteActual;
@@ -22,6 +23,4 @@ Paquete Ensamblador::agregar(Paquete paqueteNuevo) {
 
 Ensamblador::~Ensamblador() {
   paquetes.clear();
-}
-Ensamblador::Ensamblador() {
 }

@@ -1,6 +1,14 @@
 #include "ReglaAny.h"
 #include <string>
 #include <vector>
+ReglaAny::ReglaAny(unsigned int src,
+                   unsigned int dst,
+                   unsigned int threshold,
+                   std::vector<std::string> words) : Regla(src,
+                                                           dst,
+                                                           threshold,
+                                                           words) {}
+
 bool ReglaAny::aplicar(const Paquete &paquete) {
   std::string auxWord;
   std::vector<std::string>::iterator it;
@@ -25,12 +33,6 @@ bool ReglaAny::aplicar(const Paquete &paquete) {
   }
   return false;
 }
-ReglaAny::ReglaAny(unsigned int src,
-                   unsigned int dst,
-                   unsigned int threshold,
-                   std::vector<std::string> words) : Regla(src,
-                                                           dst,
-                                                           threshold,
-                                                           words) {
-}
+
+ReglaAny::~ReglaAny() {}
 

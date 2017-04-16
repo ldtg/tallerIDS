@@ -4,15 +4,17 @@
 #include <string>
 #include <vector>
 #include <bitset>
-#include "Id.h"
+#include "IdPaquete.h"
 #define MAX_LEN_DATA 65535
 #define HEADER_SIZE 20
 class Paquete {
  private:
-  Id id;
+  IdPaquete id;
   unsigned short longitudDatos;
   unsigned short bytesFaltantes;
   unsigned short offset;
+  unsigned int src;
+  unsigned int dst;
   bool hayMasFragmentos;
   bool completo;
   std::vector<char> data;
@@ -32,7 +34,7 @@ class Paquete {
   Paquete();
   explicit Paquete(const std::vector<char> &header);
   unsigned short getLongitudDatos() const;
-  Id getId() const;
+  IdPaquete getId() const;
   unsigned int getSrc() const;
   unsigned int getDst() const;
   void setData(const std::vector<char> &data, size_t dataL);
@@ -40,10 +42,7 @@ class Paquete {
   bool estaCompleto() const;
   void ensamblar(const Paquete &paqueteNuevo);
   bool estaVacio() const;
-
-  Paquete(const Paquete& paq);
-  Paquete& operator=(const Paquete& paq);
-  bool operator==(const Paquete& paq);
+  bool operator==(const Paquete& paq) const;
   ~Paquete();
 };
 #endif //TP2_APP_PAQUETE_H

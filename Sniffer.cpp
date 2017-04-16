@@ -3,10 +3,6 @@
 #include <vector>
 Sniffer::Sniffer(std::string filePath) : file(filePath, std::ios::binary),
                                          eof(false) {}
-Sniffer::~Sniffer() {
-  if (file.is_open())
-    file.close();
-}
 Paquete Sniffer::sniff() {
   std::vector<char> header;
   Paquete nullpkg;
@@ -31,6 +27,12 @@ Paquete Sniffer::sniff() {
   this->eof = true;
   return nullpkg;
 }
+
 bool Sniffer::termino() {
   return !file.is_open() || file.eof();
+}
+
+Sniffer::~Sniffer() {
+  if (file.is_open())
+    file.close();
 }

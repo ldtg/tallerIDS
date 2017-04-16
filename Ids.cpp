@@ -2,9 +2,8 @@
 #include <string>
 #include <vector>
 Ids::Ids(std::string archivo, EnsambladorMonitor &ensambladorMonitor,
-         DetectorMonitor &dtk)
-    : ensambladorMonitor(ensambladorMonitor),
-      sniffer(archivo), detector(dtk) {}
+         DetectorMonitor &dtk) : sniffer(archivo), ensambladorMonitor
+    (ensambladorMonitor), detector(dtk) {}
 
 void Ids::run() {
   while (!sniffer.termino()) {
@@ -24,4 +23,6 @@ void Ids::run() {
     }
   }
 }
+
+Ids::~Ids() {}
 

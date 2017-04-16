@@ -1,7 +1,3 @@
-//
-// Created by tg on 06/04/17.
-//
-
 #include <cstring>
 #include <algorithm>
 #include <vector>
@@ -11,15 +7,13 @@ Paquete::Paquete() {
   this->toZero();
 }
 Paquete::Paquete(const std::vector<char> &header) {
-  unsigned int src, dst;
-  unsigned short paqid;
-  paqid = getDosBytes(header, 4);
+  unsigned short paqid = getDosBytes(header, 4);
   this->longitudDatos = (unsigned short) (getDosBytes(header, 2) - 20);
   this->hayMasFragmentos = (bool) ((header[6] & 32) >> 5);
   this->offset = (unsigned short) (getDosBytes(header, 6) & 8191); // solo los
-  src = getCuatroBytes(header, 12);                   //primeros 13 bytes
-  dst = getCuatroBytes(header, 16);
-  this->id = Id(src, dst, paqid);
+  this->src = getCuatroBytes(header, 12);      //primeros 13 bytes
+  this->dst = getCuatroBytes(header, 16);
+  this->id = IdPaquete(this->src, this->dst, paqid);
 
   if (!this->hayMasFragmentos && this->offset == 0) {
     this->completo = true;
@@ -34,45 +28,13 @@ Paquete::Paquete(const std::vector<char> &header) {
   }
 }
 
-Paquete::~Paquete() {
-  this->toZero();
-}
-
-unsigned int Paquete::getSrc() const {
-  return this->id.getSrc();
-}
-unsigned int Paquete::getDst() const {
-  return this->id.getDst();
-}
-
-unsigned short Paquete::getLongitudDatos() const {
-  return this->longitudDatos;
-}
-void Paquete::setData(const std::vector<char> &data, size_t dataL) {
-  this->data.resize(dataL);
-  std::copy_n(data.begin(), dataL, this->data.begin());
-}
-std::vector<char> Paquete::getData() const {
-  std::vector<char> data(this->longitudDatos);
-  std::copy_n(this->data.begin(), this->longitudDatos, data.begin());
-  return data;
-}
-bool Paquete::estaCompleto() const {
-  return this->completo;
-}
-Id Paquete::getId() const {
-  return this->id;
-}
 void Paquete::ensamblar(const Paquete &paqueteNuevo) {
-  std::vector<char> dataEnsamblada;
-  unsigned short minOffset, maxOffset, longDatosMinimo;
-
   if (ensambleValido(paqueteNuevo)) {
-    dataEnsamblada = ensamblarDatos(paqueteNuevo);
+    std::vector<char> dataEnsamblada = ensamblarDatos(paqueteNuevo);
 
-    minOffset = std::min(this->offset, paqueteNuevo.offset);
-    maxOffset = std::max(this->offset, paqueteNuevo.offset);
-    longDatosMinimo = longMinimo(paqueteNuevo);
+    unsigned short minOffset = std::min(this->offset, paqueteNuevo.offset);
+    unsigned short maxOffset = std::max(this->offset, paqueteNuevo.offset);
+    unsigned short longDatosMinimo = longMinimo(paqueteNuevo);
 
     if (!this->hayMasFragmentos || !paqueteNuevo.hayMasFragmentos) {//alguno
       ensamblarUltimo(paqueteNuevo);                          // es el ultimo
@@ -86,6 +48,42 @@ void Paquete::ensamblar(const Paquete &paqueteNuevo) {
     this->setData(dataEnsamblada, this->longitudDatos);
   }
 }
+
+unsigned int Paquete::getSrc() const {
+  return this->src;
+}
+
+unsigned int Paquete::getDst() const {
+  return this->dst;
+}
+
+unsigned short Paquete::getLongitudDatos() const {
+  return this->longitudDatos;
+}
+
+void Paquete::setData(const std::vector<char> &data, size_t dataL) {
+  this->data.resize(dataL);
+  std::copy_n(data.begin(), dataL, this->data.begin());
+}
+
+std::vector<char> Paquete::getData() const {
+  std::vector<char> data(this->longitudDatos);
+  std::copy_n(this->data.begin(), this->longitudDatos, data.begin());
+  return data;
+}
+
+bool Paquete::estaCompleto() const {
+  return this->completo;
+}
+
+IdPaquete Paquete::getId() const {
+  return this->id;
+}
+
+Paquete::~Paquete() {
+  this->toZero();
+}
+
 unsigned short Paquete::getDosBytes(const std::vector<char> &header, int
 byteInicio) const {
   unsigned short aux;
@@ -118,8 +116,8 @@ void Paquete::toZero() {
 }
 std::vector<char> Paquete::ensamblarDatos(const Paquete &pkg) {
   std::vector<char> ensamblada(MAX_LEN_DATA);
-  std::copy_n(this->data.begin(), this->longitudDatos, ensamblada.begin
-      () + this->offset);
+  std::copy_n(this->data.begin(), this->longitudDatos, ensamblada.begin()
+      + this->offset);
   std::copy_n(pkg.data.begin(),
               pkg.longitudDatos,
               ensamblada.begin() + pkg.offset);
@@ -172,31 +170,10 @@ bool Paquete::ensambleValido(const Paquete &paquete) const {
 }
 
 bool Paquete::estaVacio() const {
-  return this->id.getDst() == 0 && this->id.getSrc() == 0;
+  return this->longitudDatos == 0;
 }
 
-Paquete::Paquete(const Paquete &paq) {
-  this->id = paq.id;
-  this->longitudDatos = paq.longitudDatos;
-  this->bytesFaltantes = paq.bytesFaltantes;
-  this->offset = paq.offset;
-  this->hayMasFragmentos = paq.hayMasFragmentos;
-  this->completo = paq.completo;
-  this->data.resize(paq.data.size());
-  std::copy(paq.data.begin(), paq.data.end(), this->data.begin());
-}
-Paquete &Paquete::operator=(const Paquete &paq) {
-  this->id = paq.id;
-  this->longitudDatos = paq.longitudDatos;
-  this->bytesFaltantes = paq.bytesFaltantes;
-  this->offset = paq.offset;
-  this->hayMasFragmentos = paq.hayMasFragmentos;
-  this->completo = paq.completo;
-  this->data.resize(paq.data.size());
-  std::copy(paq.data.begin(), paq.data.end(), this->data.begin());
-  return *this;
-}
-bool Paquete::operator==(const Paquete &paq) {
+bool Paquete::operator==(const Paquete &paq) const {
   return paq.getId() == this->getId();
 }
 

@@ -9,6 +9,7 @@ class ReglaAlways : public Regla{
   ReglaAlways(unsigned int src, unsigned int dst, unsigned int threshold,
         std::vector<std::string> words);
   virtual bool aplicar(const Paquete &paquete) override;
+  ~ReglaAlways();
 };
 
 #endif //TP2_APP_REGLAALWAYS_H

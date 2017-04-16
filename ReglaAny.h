@@ -9,6 +9,7 @@ class ReglaAny : public Regla {
   ReglaAny(unsigned int src, unsigned int dst, unsigned int threshold,
            std::vector<std::string> words);
   virtual bool aplicar(const Paquete &paquete) override;
+  ~ReglaAny();
 };
 
 #endif //TP2_APP_REGLAANY_H

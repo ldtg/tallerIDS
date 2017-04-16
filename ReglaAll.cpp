@@ -2,6 +2,14 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+ReglaAll::ReglaAll(unsigned int src,
+                   unsigned int dst,
+                   unsigned int threshold,
+                   std::vector<std::string> words) : Regla(src,
+                                                           dst,
+                                                           threshold,
+                                                           words) {}
+
 bool ReglaAll::aplicar(const Paquete &paquete) {
   std::vector<bool> boolWords(words.size());
   std::string auxWord;
@@ -29,11 +37,4 @@ bool ReglaAll::aplicar(const Paquete &paquete) {
   }
   return false;
 }
-ReglaAll::ReglaAll(unsigned int src,
-                   unsigned int dst,
-                   unsigned int threshold,
-                   std::vector<std::string> words) : Regla(src,
-                                                           dst,
-                                                           threshold,
-                                                           words) {
-}
+ReglaAll::~ReglaAll() {}

@@ -6,8 +6,7 @@
 #include "ReglaAlways.h"
 #include "ReglaAny.h"
 #include "ReglaAll.h"
-Detector::Detector(std::string configFile, ImpresionMonitor &impresion) :
-    impresion(impresion) {
+Detector::Detector(std::string configFile) {
   std::ifstream inFile(configFile);
   std::string keyword;
   std::vector<std::string> words;
@@ -33,6 +32,23 @@ Detector::Detector(std::string configFile, ImpresionMonitor &impresion) :
   inFile.close();
 }
 
+void Detector::aplicar(const Paquete &paquete) {
+  std::vector<Regla *>::iterator it;
+  if (!fueProcesado(paquete)) {
+    for (it = reglas.begin(); it != reglas.end(); it++) {
+      if ((*it)->aplicar(paquete))
+        imprimirAlerta(std::distance(reglas.begin(), it), paquete);
+    }
+    paquetesProcesados.push_back(paquete);
+  }
+}
+
+Detector::~Detector() {
+  for (auto &&regla : reglas) {
+    delete (regla);
+  }
+}
+
 std::vector<std::string> Detector::llenarTokens(std::ifstream *inFile) {
   std::string token;
   std::vector<std::string> tokens;
@@ -41,35 +57,20 @@ std::vector<std::string> Detector::llenarTokens(std::ifstream *inFile) {
   }
   return tokens;
 }
-Detector::~Detector() {
-  for (auto &&regla : reglas) {
-    delete (regla);
-  }
-}
-void Detector::aplicar(const Paquete &paquete) {
-  std::vector<Regla *>::iterator it;
-  if(!fueProcesado(paquete)){
-    for (it = reglas.begin(); it != reglas.end(); it++) {
-      if ((*it)->aplicar(paquete))
-        imprimirAlerta(std::distance(reglas.begin(), it), paquete);
-    }
-    paquetesProcesados.push_back(paquete);
-  }
-}
-void Detector::imprimirAlerta(long pos,const Paquete &paquete) {
-  std::ostringstream ss;
-  ss << std::hex;
-  ss << "Rule " << pos << ": ";
-  ss << "ALERT! " << paquete.getSrc() << " -> " << paquete.getDst()
-     << ":";
+
+void Detector::imprimirAlerta(long pos, const Paquete &paquete) {
+  std::cout << std::hex;
+  std::cout << "Rule " << pos << ": ";
+  std::cout << "ALERT! " << paquete.getSrc() << " -> " << paquete.getDst()
+            << ":";
   for (auto &&byte : paquete.getData()) {
-    ss << " ";
-    ss << (int) byte;
+    std::cout << " ";
+    std::cout << (int) byte;
   }
-  ss << std::endl;
-  impresion.imprimir(ss.str());
+  std::cout << std::endl;
 }
+
 bool Detector::fueProcesado(const Paquete &paquete) {
-  return std::find(paquetesProcesados.begin(),paquetesProcesados.end(),
+  return std::find(paquetesProcesados.begin(), paquetesProcesados.end(),
                    paquete) != paquetesProcesados.end();
 }

@@ -108,22 +108,16 @@
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/EnsambladorMonitor.h">
 			<Option target="TP2_APP"/>
 		</Unit>
-		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp">
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>
-		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Id.h">
+		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.h">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.cpp">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Ids.h">
-			<Option target="TP2_APP"/>
-		</Unit>
-		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp">
-			<Option target="TP2_APP"/>
-		</Unit>
-		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.h">
 			<Option target="TP2_APP"/>
 		</Unit>
 		<Unit filename="/home/tg/FIUBA/taller/tp2/TP2_APP/Lock.cpp">

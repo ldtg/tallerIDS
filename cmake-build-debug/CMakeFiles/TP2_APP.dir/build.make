@@ -225,28 +225,28 @@ CMakeFiles/TP2_APP.dir/Ids.cpp.o.provides: CMakeFiles/TP2_APP.dir/Ids.cpp.o.requ
 CMakeFiles/TP2_APP.dir/Ids.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Ids.cpp.o
 
 
-CMakeFiles/TP2_APP.dir/Id.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
-CMakeFiles/TP2_APP.dir/Id.cpp.o: ../Id.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TP2_APP.dir/Id.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/Id.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o: ../IdPaquete.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.cpp
 
-CMakeFiles/TP2_APP.dir/Id.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/Id.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp > CMakeFiles/TP2_APP.dir/Id.cpp.i
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/IdPaquete.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.cpp > CMakeFiles/TP2_APP.dir/IdPaquete.cpp.i
 
-CMakeFiles/TP2_APP.dir/Id.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/Id.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/Id.cpp -o CMakeFiles/TP2_APP.dir/Id.cpp.s
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/IdPaquete.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/IdPaquete.cpp -o CMakeFiles/TP2_APP.dir/IdPaquete.cpp.s
 
-CMakeFiles/TP2_APP.dir/Id.cpp.o.requires:
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.requires:
 
-.PHONY : CMakeFiles/TP2_APP.dir/Id.cpp.o.requires
+.PHONY : CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.requires
 
-CMakeFiles/TP2_APP.dir/Id.cpp.o.provides: CMakeFiles/TP2_APP.dir/Id.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/Id.cpp.o.provides.build
-.PHONY : CMakeFiles/TP2_APP.dir/Id.cpp.o.provides
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.provides: CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.requires
+	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.provides.build
+.PHONY : CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.provides
 
-CMakeFiles/TP2_APP.dir/Id.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/Id.cpp.o
+CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o
 
 
 CMakeFiles/TP2_APP.dir/Detector.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
@@ -393,33 +393,9 @@ CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides: CMakeFiles/TP2_APP.dir/ReglaA
 CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
 
 
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o: ../ImpresionMonitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp
-
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp > CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.i
-
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tg/FIUBA/taller/tp2/TP2_APP/ImpresionMonitor.cpp -o CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.s
-
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires:
-
-.PHONY : CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
-
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/TP2_APP.dir/build.make CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides.build
-.PHONY : CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides
-
-CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.provides.build: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
-
-
 CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: CMakeFiles/TP2_APP.dir/flags.make
 CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o: ../DetectorMonitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o -c /home/tg/FIUBA/taller/tp2/TP2_APP/DetectorMonitor.cpp
 
 CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.i: cmake_force
@@ -450,14 +426,13 @@ TP2_APP_OBJECTS = \
 "CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Thread.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Ids.cpp.o" \
-"CMakeFiles/TP2_APP.dir/Id.cpp.o" \
+"CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Detector.cpp.o" \
 "CMakeFiles/TP2_APP.dir/Regla.cpp.o" \
 "CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o" \
 "CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o" \
 "CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o" \
 "CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o" \
-"CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o" \
 "CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o"
 
 # External object files for target TP2_APP
@@ -470,18 +445,17 @@ TP2_APP: CMakeFiles/TP2_APP.dir/Lock.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Thread.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Ids.cpp.o
-TP2_APP: CMakeFiles/TP2_APP.dir/Id.cpp.o
+TP2_APP: CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Detector.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/Regla.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o
-TP2_APP: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o
 TP2_APP: CMakeFiles/TP2_APP.dir/build.make
 TP2_APP: CMakeFiles/TP2_APP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable TP2_APP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tg/FIUBA/taller/tp2/TP2_APP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable TP2_APP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP2_APP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -496,14 +470,13 @@ CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Lock.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Ensamblador.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Thread.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Ids.cpp.o.requires
-CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Id.cpp.o.requires
+CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/IdPaquete.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Detector.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/Regla.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/EnsambladorMonitor.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAll.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAny.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ReglaAlways.cpp.o.requires
-CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/ImpresionMonitor.cpp.o.requires
 CMakeFiles/TP2_APP.dir/requires: CMakeFiles/TP2_APP.dir/DetectorMonitor.cpp.o.requires
 
 .PHONY : CMakeFiles/TP2_APP.dir/requires

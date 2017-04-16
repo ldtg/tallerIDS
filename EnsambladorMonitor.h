@@ -8,11 +8,11 @@ class EnsambladorMonitor {
   Ensamblador ensamblador;
   std::mutex mutex;
  public:
-  explicit EnsambladorMonitor();
+  EnsambladorMonitor();
   Paquete agregar(const Paquete& paquete);
+  ~EnsambladorMonitor();
   EnsambladorMonitor(const EnsambladorMonitor &) = delete;
   EnsambladorMonitor &operator=(const EnsambladorMonitor &) = delete;
-  ~EnsambladorMonitor();
 };
 
 #endif //TP2_APP_GESTORMONITOR_H
