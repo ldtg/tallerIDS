@@ -3,9 +3,9 @@
 
 class IdPaquete {
  private:
-  unsigned int src;
-  unsigned int dst;
-  unsigned short id;
+  const unsigned int src;
+  const unsigned int dst;
+  const unsigned short id;
  public:
   IdPaquete();
   IdPaquete(unsigned int src, unsigned int dst, unsigned short id);

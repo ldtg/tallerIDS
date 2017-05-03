@@ -1,9 +1,5 @@
 #include "IdPaquete.h"
-IdPaquete::IdPaquete() {
-  this->id = 0;
-  this->dst = 0;
-  this->src = 0;
-}
+IdPaquete::IdPaquete() : id(0), dst(0), src(0){}
 
 IdPaquete::IdPaquete(unsigned int src, unsigned int dst, unsigned short id)
     : src(src), dst(dst), id(id) {}
